@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FPC Pratas — Joias em Prata 925 · Nova Contagem, MG</title>
+<meta name="description" content="Joias em prata 925 no varejo e atacado, solda profissional e personalização sob medida. Oficina própria em Nova Contagem, Contagem — MG. Envio para todo o Brasil.">
+<meta name="theme-color" content="#101216">
+<link rel="icon" type="image/png" href="assets/logo-fpc.png">
+<link rel="apple-touch-icon" href="assets/logo-fpc.png">
+<meta property="og:title" content="FPC Pratas — Joias em Prata 925">
+<meta property="og:description" content="Prata 925 legítima, solda profissional e gravação personalizada. Feita em oficina própria, em Nova Contagem — MG.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/logo-fpc.png">
+<script src="vendor/react.production.min.js"></script>
+<script src="vendor/react-dom.production.min.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics="">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&amp;family=Inter:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>body{margin:0;background:#f4f2ee radial-gradient(1200px 620px at 50% -140px,#fbf9f5,#f4f2ee) no-repeat;color:#17181a;font-family:'Inter',sans-serif;--gold:#a47864;-webkit-font-smoothing:antialiased}
+::selection{background:var(--gold);color:#141310}
+.serif{font-family:'Playfair Display',serif}.mono{font-family:'IBM Plex Mono',monospace}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+.gold{color:var(--gold)}
+.topbar{background:#0b0c0e;color:#b7aea5;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-align:center;padding:9px 16px;text-transform:uppercase}
+.hdr{background:transparent;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);position:sticky;top:0;z-index:50;border-bottom:1px solid transparent;transition:background .4s ease,border-color .4s ease}
+.hdr.lite{background:rgba(248,246,242,.92);border-bottom-color:#e2ddd1}
+.lite .nlink{color:#514d45}
+.lite .nlink.non{color:#141310}
+.lite .nlink:hover{color:#8b6350}
+.lite .hbtn{color:#17181a;border-color:rgba(139,99,80,.5)}
+.lite .hbtn:hover{color:#8b6350;border-color:#8b6350}
+.lite .bline{background:#17181a}
+.lite .burger{border-color:rgba(139,99,80,.5)}
+.lite .lgm{background:linear-gradient(160deg,#23262b,#565d66 40%,#14161a 62%,#3d434b 82%,#23262b);-webkit-background-clip:text;background-clip:text}
+.lite .lgt{color:#17181a}
+.hdrin{height:74px}
+.hgrid{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px}
+.hlogo{width:42px;height:42px;border-radius:50%;object-fit:contain;background:radial-gradient(circle,#181b20 62%,transparent 63%);box-shadow:0 0 0 1px rgba(200,205,212,.25),0 4px 12px rgba(0,0,0,.4);margin-right:3px;align-self:center}
+.logo{display:flex;align-items:center;gap:9px;cursor:pointer}
+.lgt{align-self:center}
+.nlink{position:relative}
+.nlink::after{content:'';position:absolute;left:50%;bottom:-2px;width:0;height:1px;background:var(--gold);transition:all .25s ease;transform:translateX(-50%)}
+.nlink:hover::after{width:70%}
+.nlink.non{color:#eceae4}
+.nlink.non::after{width:70%}
+.bagic{width:15px;height:15px;flex:none}
+.lgm{font-family:'Playfair Display',serif;font-size:27px;font-weight:700;letter-spacing:.02em;background:linear-gradient(160deg,#fafbfc,#c8cdd4 40%,#eef1f3 55%,#9aa3ac 75%,#dfe3e7);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.lgt{font-size:10.5px;letter-spacing:.44em;color:#eceae4;font-weight:600}
+.nlink{color:#b3b1a8;font-size:12px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;background:none;border:0;padding:6px 12px;font-family:'Inter',sans-serif;transition:color .2s}
+.nlink:hover{color:var(--gold)}
+.hbtn{display:flex;align-items:center;gap:9px;background:none;border:1px solid rgba(164,120,100,.4);color:#eceae4;padding:10px 16px;cursor:pointer;font:600 11.5px 'Inter',sans-serif;letter-spacing:.12em;text-transform:uppercase;border-radius:2px;transition:all .2s;text-decoration:none}
+.hbtn:hover{border-color:var(--gold);color:var(--gold)}
+.cnt{background:var(--gold);color:#141310;font:600 11px 'IBM Plex Mono',monospace;min-width:18px;height:18px;border-radius:9px;display:flex;align-items:center;justify-content:center;padding:0 4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--gold);color:#141310;font:600 12.5px 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:17px 32px;border:1px solid var(--gold);cursor:pointer;transition:all .2s;text-decoration:none;border-radius:2px}
+.btn:hover{filter:brightness(1.09);transform:translateY(-1px);box-shadow:0 10px 24px rgba(164,120,100,.28)}
+.btn:active{transform:scale(.98)}
+.btn2{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:transparent;color:var(--gold);font:600 12.5px 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:17px 32px;border:1px solid rgba(164,120,100,.55);cursor:pointer;transition:all .2s;text-decoration:none;border-radius:2px}
+.btn2:hover{border-color:var(--gold);background:rgba(164,120,100,.08)}
+.sig{display:flex;align-items:center;gap:10px}.sig.c{justify-content:center}
+.sigline{width:44px;height:1px;background:var(--gold)}
+.sigdia{width:6px;height:6px;background:var(--gold);transform:rotate(45deg);flex:none}
+.kick{font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:#8b6350}
+.h2{font-family:'Playfair Display',serif;font-size:clamp(26px,3.5vw,38px);font-weight:700;letter-spacing:-.01em;margin:16px 0 10px;text-wrap:balance}
+.hero{background:#101216;color:#eceae4;margin-top:-74px;padding-top:74px;background-image:radial-gradient(900px 480px at 82% -10%,rgba(214,219,226,.1),transparent 60%),linear-gradient(115deg,transparent 49.85%,rgba(220,224,230,.1) 49.85%,rgba(220,224,230,.1) 50.15%,transparent 50.15%),linear-gradient(65deg,transparent 69.9%,rgba(255,255,255,.05) 69.9%,rgba(255,255,255,.05) 70.1%,transparent 70.1%)}
+.heroin{display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:center;padding-top:88px;padding-bottom:96px}
+.h1{font-family:'Playfair Display',serif;font-size:clamp(36px,5.4vw,60px);line-height:1.06;font-weight:700;letter-spacing:-.015em;margin:22px 0 20px;text-wrap:balance}
+.lead{font-size:clamp(14.5px,1.3vw,16px);line-height:1.7;color:#c1bfb5;max-width:44ch;margin:0 0 34px;text-wrap:pretty}
+.stat{border-left:1px solid rgba(164,120,100,.35);padding-left:16px}
+.statv{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:#eceae4}
+.statl{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#a8a59c;margin-top:3px}
+.ph{background:linear-gradient(135deg,#edeae3,#f8f6f1 44%,#e5e1d7 78%,#efece6);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.phd{background:linear-gradient(135deg,#161920,#20242c 46%,#12141a 82%,#1a1d24)}
+.phl{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;color:#6d685e;background:rgba(255,255,255,.92);padding:5px 10px;border-radius:2px;text-align:center}
+.phd .phl{background:rgba(10,11,13,.7);color:#b7aea5}
+.heropic{aspect-ratio:4/4.6;border:1px solid rgba(164,120,100,.3);outline:1px solid rgba(164,120,100,.3);outline-offset:10px}
+.sec{padding:clamp(56px,9vw,104px) 0 0}
+.shead{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:40px}
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.pgrid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pcard{background:#fff;border:1px solid #e5e1d8;transition:all .3s ease;cursor:pointer;position:relative;overflow:hidden;text-align:left;padding:0;font-family:'Inter',sans-serif}
+.pcard:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(20,17,8,.13);border-color:rgba(164,120,100,.55)}
+.pimg{aspect-ratio:1;position:relative}
+.pbadge{position:absolute;top:12px;left:12px;background:#141310;color:#c8cdd4;font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.14em;padding:6px 9px;text-transform:uppercase;z-index:2}
+.pbody{padding:18px 20px 20px}
+.pname{font-family:'Playfair Display',serif;font-size:17.5px;font-weight:600;margin:0 0 6px;line-height:1.25;min-height:2.5em}
+.pmeta{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#6d685e;letter-spacing:.06em}
+.pprice{font-weight:600;font-size:15px;margin-top:10px}
+.svc{background:#fff;border:1px solid #e5e1d8;border-top:2px solid var(--gold);padding:34px 30px 32px;transition:all .3s;position:relative;overflow:hidden}
+.svc:hover{box-shadow:0 14px 30px rgba(20,17,8,.1);transform:translateY(-3px)}
+.svcn{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--gold);letter-spacing:.2em}
+.svct{font-family:'Playfair Display',serif;font-size:23px;font-weight:600;margin:14px 0 10px}
+.svcd{font-size:14px;line-height:1.65;color:#514d45;margin:0 0 18px}
+.tlink{font:600 11.5px 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#141310;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:3px;cursor:pointer;background:none;border-top:0;border-left:0;border-right:0}
+.tlink:hover{color:var(--gold)}
+.dif{text-align:center;padding:0 18px}
+.difd{width:8px;height:8px;background:var(--gold);transform:rotate(45deg);margin:0 auto 16px}
+.dift{font-weight:600;font-size:15px;margin-bottom:8px}
+.difp{font-size:13.5px;line-height:1.6;color:#514d45;margin:0}
+.quote{background:#fff;border:1px solid #e5e1d8;padding:48px 28px 30px;position:relative}
+.quott{font-family:'Playfair Display',serif;font-style:italic;font-size:16.5px;line-height:1.6;margin:0 0 22px}
+.avat{width:40px;height:40px;border-radius:50%;background:#141310;color:var(--gold);display:flex;align-items:center;justify-content:center;font:600 12px 'IBM Plex Mono',monospace;flex:none}
+.waband{background:#101216;color:#eceae4;margin-top:96px;padding:76px 0;text-align:center;background-image:radial-gradient(600px 300px at 50% 120%,rgba(214,219,226,.11),transparent 65%)}
+.foot{background:#0b0c0e;color:#a8a59c;padding-top:40px;margin-top:96px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:38px;padding-bottom:36px}
+.fh{font:600 11px 'Inter',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#eceae4;margin-bottom:18px}
+.flink{display:block;color:#a8a59c;text-decoration:none;font-size:13.5px;padding:5px 0;cursor:pointer;background:none;border:0;text-align:left;font-family:'Inter',sans-serif;transition:color .2s}
+.flink:hover{color:var(--gold)}
+.fbot{border-top:1px solid rgba(255,255,255,.08);padding:20px 0;display:flex;justify-content:space-between;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em}
+.wafab{position:fixed;right:26px;bottom:26px;z-index:80;display:flex;align-items:center;gap:10px;background:#101216;color:#eceae4;border:1px solid rgba(164,120,100,.55);padding:14px 22px;border-radius:999px;font:600 11.5px 'Inter',sans-serif;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.4);transition:all .2s}
+.wafab:hover{transform:translateY(-2px);border-color:var(--gold)}
+.wadot{width:8px;height:8px;border-radius:50%;background:#57c46a;box-shadow:0 0 8px rgba(87,196,106,.8)}
+.page{padding:56px 0 0}
+.crumb{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#6d685e;margin-bottom:24px}
+.clink{color:#6d685e;cursor:pointer;background:none;border:0;font:inherit;text-decoration:none}
+.clink:hover{color:var(--gold)}
+.shoplay{display:grid;grid-template-columns:236px 1fr;gap:48px;align-items:start;margin-top:36px}
+.shoplay>*,.pdlay>*{min-width:0}
+.fside{position:sticky;top:106px}
+.fgrp{margin-bottom:30px}
+.flab{font:600 10.5px 'Inter',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#6d685e;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:8px 13px;border:1px solid #ddd8cc;font:500 12.5px 'Inter',sans-serif;cursor:pointer;background:#fff;color:#45443f;border-radius:2px;transition:all .2s}
+.chip:hover{border-color:var(--gold)}
+.chip.on{border-color:var(--gold);background:#141310;color:var(--gold)}
+.pdlay{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:start;margin-top:8px}
+.gmain{aspect-ratio:1;border:1px solid #e5e1d8}
+.gthumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
+.gth{aspect-ratio:1;border:1px solid #e5e1d8;cursor:pointer}
+.gth:hover{border-color:var(--gold)}
+.pdprice{font-family:'Playfair Display',serif;font-size:30px;font-weight:600;color:#141310;margin:16px 0 4px}
+.pdprice-x{color:var(--gold)}
+.srow{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid #e8e4da;font-size:13.5px}
+.slab{color:#6d685e}
+.sval{font-family:'IBM Plex Mono',monospace;font-size:12.5px}
+.cbox{border:1px solid rgba(164,120,100,.5);background:#f7f2ee;padding:22px 24px;margin:26px 0}
+.cboxh{font:600 11px 'Inter',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#141310;display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.crow{display:flex;align-items:center;gap:13px;padding:10px 0;cursor:pointer;border:0;background:none;width:100%;text-align:left;font-family:'Inter',sans-serif}
+.cb{width:19px;height:19px;border:1.5px solid #c6bcb2;display:flex;align-items:center;justify-content:center;flex:none;border-radius:2px;color:transparent;font-size:12px;font-weight:700;transition:all .15s;background:#fff}
+.cb.on{background:var(--gold);border-color:var(--gold);color:#141310}
+.cprice{margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#6d685e}
+.qty{display:inline-flex;border:1px solid #ddd8cc;background:#fff}
+.qbtn{width:42px;height:50px;border:0;background:none;font-size:17px;cursor:pointer;color:#45443f}
+.qbtn:hover{color:var(--gold)}
+.qval{width:46px;display:flex;align-items:center;justify-content:center;font:600 14px 'IBM Plex Mono',monospace}
+.in{width:100%;padding:13px 14px;border:1px solid #ddd8cc;background:#fff;font:400 14px 'Inter',sans-serif;border-radius:2px;box-sizing:border-box;color:#17181a}
+.in:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(164,120,100,.16)}
+.lab{display:block;font:600 10.5px 'Inter',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#514d45;margin:0 0 8px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cartrow{display:grid;grid-template-columns:84px 1fr 118px 90px 30px;gap:20px;align-items:center;padding:20px 0;border-bottom:1px solid #e8e4da}
+.cimg{width:84px;height:84px}
+.xbtn{background:none;border:0;color:#b0aca0;font-size:18px;cursor:pointer;padding:4px}
+.xbtn:hover{color:#c0392b}
+.sumcard{background:#fff;border:1px solid #e5e1d8;padding:28px;position:sticky;top:106px}
+.sumrow{display:flex;justify-content:space-between;padding:9px 0;font-size:14px}
+.sumtot{display:flex;justify-content:space-between;padding:16px 0 4px;margin-top:10px;border-top:1px solid #e8e4da;font-weight:700;font-size:17px}
+.pay{display:flex;gap:14px;align-items:center;border:1px solid #ddd8cc;padding:16px 18px;cursor:pointer;background:#fff;border-radius:2px;transition:all .15s;width:100%;text-align:left;font-family:'Inter',sans-serif}
+.pay.on{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold);background:#f7f2ee}
+.rdot{width:16px;height:16px;border:1.5px solid #c6bcb2;border-radius:50%;flex:none;box-sizing:border-box}
+.pay.on .rdot{border-width:5px;border-color:var(--gold)}
+.payt{font-weight:600;font-size:14px}
+.payd{font-size:12px;color:#6d685e;margin-top:2px}
+.faqq{font-weight:600;font-size:14.5px;margin-bottom:6px}
+.faqa{font-size:13.5px;line-height:1.65;color:#514d45;margin:0 0 22px}
+.okmark{width:64px;height:64px;border:1px solid var(--gold);transform:rotate(45deg);display:flex;align-items:center;justify-content:center;margin:0 auto 28px}
+.okin{transform:rotate(-45deg);color:var(--gold);font-size:24px}
+.lay2{grid-template-columns:1fr 360px}
+.lay3{grid-template-columns:1fr 380px}
+.pgc3{grid-template-columns:repeat(3,1fr)}
+.difgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.ctarow{flex-wrap:wrap}.atcrow{flex-wrap:wrap}
+@keyframes fadeUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes shimmer{to{background-position:-200% center}}
+@keyframes pulse{0%{opacity:.8;transform:scale(.9)}70%{opacity:0;transform:scale(1.28)}100%{opacity:0;transform:scale(1.28)}}
+@keyframes pop{from{transform:rotate(45deg) scale(.4);opacity:0}to{transform:rotate(45deg) scale(1);opacity:1}}
+@keyframes rvIn{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+.au{animation:fadeUp .7s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.08s}.d2{animation-delay:.18s}.d3{animation-delay:.28s}.d4{animation-delay:.38s}
+.page{animation:fadeUp .45s cubic-bezier(.2,.7,.2,1) both}
+@supports (animation-timeline: view()){.rv{animation:rvIn both;animation-timeline:view();animation-range:entry 0% entry 55%}}
+.shine{background:linear-gradient(100deg,#c3c9d0 25%,#ffffff 42%,#c3c9d0 58%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 4.5s linear infinite}
+.floaty{animation:floaty 7s ease-in-out infinite}
+.hero{position:relative;overflow:hidden}
+.orb{position:absolute;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(216,221,227,.15),transparent 62%);filter:blur(28px);top:-140px;right:4%;pointer-events:none;animation:floaty 9s ease-in-out infinite}
+.pcard::after{content:'';position:absolute;top:0;left:-90%;width:55%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-18deg);transition:left .65s ease;pointer-events:none;z-index:3}
+.pcard:hover::after{left:135%}
+.btn{position:relative;overflow:hidden}
+.btn::after{content:'';position:absolute;top:0;left:-80%;width:40%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-18deg);transition:left .5s ease;pointer-events:none}
+.btn:hover::after{left:150%}
+.wafab::before{content:'';position:absolute;inset:-5px;border-radius:999px;border:1px solid rgba(164,120,100,.55);animation:pulse 2.6s ease-out infinite;pointer-events:none}
+.okmark{animation:pop .55s cubic-bezier(.34,1.56,.64,1) both}
+.burger{display:none;width:44px;height:44px;background:none;border:1px solid rgba(164,120,100,.4);border-radius:2px;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0;flex:none}
+.bline{width:18px;height:1.5px;background:#eceae4;display:block;transition:all .28s}
+.open .bl1{transform:translateY(6.5px) rotate(45deg)}
+.open .bl2{opacity:0}
+.open .bl3{transform:translateY(-6.5px) rotate(-45deg)}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(80vw,330px);background:#0f1114;z-index:95;transform:translateX(103%);transition:transform .38s cubic-bezier(.2,.75,.2,1);display:flex;flex-direction:column;padding:26px 26px 30px;box-sizing:border-box;border-left:1px solid rgba(164,120,100,.25)}
+.drawer.open{transform:none}
+.dbg{position:fixed;inset:0;background:rgba(6,6,5,.55);backdrop-filter:blur(3px);z-index:90;opacity:0;pointer-events:none;transition:opacity .3s}
+.dbg.show{opacity:1;pointer-events:auto}
+.dlink{background:none;border:0;border-bottom:1px solid rgba(255,255,255,.08);color:#eceae4;font-family:'Playfair Display',serif;font-size:23px;font-weight:600;text-align:left;padding:17px 2px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:color .2s}
+.dlink:hover{color:var(--gold)}
+.dnum{font-family:'IBM Plex Mono',monospace;font-size:10px;color:#5a5952;letter-spacing:.2em}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.svcd,.difp,.faqa{text-wrap:pretty}
+.grain{position:relative}
+.grain::before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.06;mix-blend-mode:soft-light;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E")}
+.grain .wrap{position:relative;z-index:1}
+.ghost{position:absolute;left:-1%;bottom:-7%;font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(150px,24vw,340px);line-height:.8;color:transparent;-webkit-text-stroke:1px rgba(201,206,212,.15);pointer-events:none;user-select:none;translate:calc(var(--mx,0)*-26px) calc(var(--my,0)*-16px)}
+.orb{translate:calc(var(--mx,0)*34px) calc(var(--my,0)*22px)}
+.heropic::after{content:'';position:absolute;top:-15px;right:-15px;width:16px;height:16px;background:var(--gold);animation:spinDia 16s linear infinite;box-shadow:0 0 18px rgba(164,120,100,.5)}
+@keyframes spinDia{from{transform:rotate(45deg)}to{transform:rotate(405deg)}}
+.scue{position:absolute;left:50%;bottom:16px;margin-left:-.5px;display:flex;flex-direction:column;align-items:center;gap:8px;z-index:2;pointer-events:none}
+.scline{width:1px;height:36px;background:linear-gradient(180deg,var(--gold),transparent);transform-origin:top;animation:scl 2.2s ease-in-out infinite}
+@keyframes scl{0%{transform:scaleY(0);opacity:1}55%{transform:scaleY(1);opacity:1}100%{transform:scaleY(1);opacity:0}}
+.mq{background:#0b0c0e;border-bottom:1px solid rgba(164,120,100,.16);overflow:hidden;padding:15px 0}
+.mqin{display:flex;width:max-content;animation:mqs 34s linear infinite}
+.mqi{display:flex;align-items:center;gap:46px;padding-right:46px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:#b7aea5;white-space:nowrap}
+@keyframes mqs{to{transform:translateX(-50%)}}
+.svc::after{content:attr(data-n);position:absolute;top:-8px;right:12px;font-family:'Playfair Display',serif;font-size:86px;font-weight:700;line-height:1;color:rgba(164,120,100,.12);pointer-events:none}
+.quote::before{content:'“';position:absolute;top:12px;left:22px;font-family:'Playfair Display',serif;font-size:60px;line-height:1;color:rgba(164,120,100,.32);pointer-events:none}
+.pimg::after{content:'';position:absolute;inset:0;background:radial-gradient(130% 95% at 28% 18%,rgba(255,255,255,.6),transparent 55%);opacity:0;transition:opacity .4s;pointer-events:none}
+.pcard:hover .pimg::after{opacity:1}
+.pcard:hover .pname{color:#8b6350}
+.phx::before{content:'◇';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:50px;color:rgba(141,136,124,.18);pointer-events:none}
+.phd.phx::before{color:rgba(164,120,100,.15)}
+.foot.nomt{margin-top:0}
+.fword{font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(32px,8vw,104px);line-height:.95;text-align:center;color:transparent;-webkit-text-stroke:1px rgba(201,206,212,.22);user-select:none;margin:0 0 26px;white-space:nowrap}
+.atcbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:70;background:rgba(15,17,20,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid rgba(164,120,100,.35);padding:11px 16px calc(11px + env(safe-area-inset-bottom));align-items:center;justify-content:space-between;gap:14px}
+.atcn{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;color:#9a978e;text-transform:uppercase;max-width:46vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.atcp{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--gold)}
+html{-webkit-tap-highlight-color:transparent}
+.pph{position:absolute;inset:0;background-size:cover;background-position:center;z-index:1;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.pcard:hover .pph{transform:scale(1.07)}
+.gmain:hover .pph{transform:scale(1.05)}
+.pcard:active{transform:translateY(-1px) scale(.985)}
+.chip:active{transform:scale(.93)}
+.hbtn:active,.btn2:active{transform:scale(.97)}
+.qbtn:active{background:#ece5df}
+.tlink:active,.dlink:active,.flink:active,.nlink:active{color:var(--gold)}
+.crow:active .cb{transform:scale(.88)}
+.scene{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;min-height:400px}
+.pedestal{position:absolute;bottom:2%;left:50%;translate:-50% 0;width:74%;height:110px;background:radial-gradient(55% 100% at 50% 100%,rgba(164,120,100,.3),transparent 72%);filter:blur(12px);pointer-events:none}
+.rsz{position:relative}
+.ringwrap{position:relative;width:330px;height:230px;perspective:950px;-webkit-box-reflect:below 6px linear-gradient(transparent 58%,rgba(0,0,0,.32));animation:floaty 9s ease-in-out infinite}
+.ringtilt{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(calc(-14deg + var(--my,0)*18deg)) rotateZ(calc(-5deg + var(--mx,0)*9deg))}
+.ringspin{position:absolute;inset:0;transform-style:preserve-3d;animation:spinY 18s linear infinite}
+@keyframes spinY{from{transform:rotateY(0deg)}to{transform:rotateY(360deg)}}
+.rp{position:absolute;left:50%;top:50%;width:26px;height:96px;margin:-48px 0 0 -13px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#f8fafb,#dfe4e9 26%,#a7b0b9 52%,#e8ebee 76%,#bfc6cd);backface-visibility:hidden;font-family:'Playfair Display',serif;font-style:normal;font-size:21px;font-weight:600;color:rgba(20,22,26,.42);text-shadow:0 1px 0 rgba(255,255,255,.65)}
+.rpi{position:absolute;left:50%;top:50%;width:26px;height:96px;margin:-48px 0 0 -13px;background:linear-gradient(180deg,#3f444b,#24272c 50%,#484d54);backface-visibility:hidden}
+.rlight{position:absolute;inset:-4%;background:linear-gradient(100deg,transparent 32%,rgba(255,255,255,.36) 45%,rgba(255,255,255,.05) 54%,transparent 62%),radial-gradient(60% 40% at 50% 6%,rgba(164,120,100,.12),transparent 70%);pointer-events:none;mix-blend-mode:screen}
+.rcap{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.3em;color:#b7aea5;text-transform:uppercase;text-align:center}
+.monu{position:relative;text-align:center;-webkit-box-reflect:below 2px linear-gradient(transparent 62%,rgba(0,0,0,.25))}
+.mlogo{width:clamp(230px,26vw,360px);height:auto;display:block;filter:drop-shadow(0 18px 40px rgba(0,0,0,.5))}
+.hero .kick{color:#d6c0b1}
+.mut{color:#6d685e}.mut2{color:#514d45}
+.srchbox{position:relative}
+.srchbox .in{padding-left:38px;padding-right:32px}
+.sic{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:#6d685e;pointer-events:none}
+.sclr{position:absolute;right:4px;top:50%;transform:translateY(-50%);background:none;border:0;font-size:17px;color:#6d685e;cursor:pointer;padding:6px 10px}
+.sclr:hover{color:#141310}
+@media(min-width:901px){.heroin{min-height:540px}}
+@media (prefers-reduced-motion: reduce){.au,.rv,.floaty,.orb,.shine,.page,.okmark,.wafab::before,.mqin,.scline,.heropic::after,.ghost,.ringspin,.ringwrap{animation:none!important;translate:none!important}}
+@media(max-width:900px){.heroin{grid-template-columns:1fr;gap:40px;padding-top:52px;padding-bottom:60px}.pgrid{grid-template-columns:repeat(2,1fr)}.pgc3{grid-template-columns:repeat(2,1fr)}.pgrid3{grid-template-columns:1fr}.shoplay,.lay2,.lay3{grid-template-columns:1fr}.fside{position:static}.sumcard{position:static}.pdlay{grid-template-columns:1fr;gap:40px}.fgrid{grid-template-columns:1fr 1fr;gap:36px}.difgrid{grid-template-columns:1fr 1fr;gap:22px}.chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}.chip{flex:none}.scue{display:none}.cartrow{grid-template-columns:64px 1fr 30px;grid-template-areas:'img info x' 'img qty price';row-gap:10px;gap:14px}.cr-img{grid-area:img;width:64px;height:64px}.cr-info{grid-area:info}.cr-qty{grid-area:qty}.cr-price{grid-area:price;text-align:right}.cr-x{grid-area:x}}
+@media(max-width:820px){.dnav{display:none}.burger{display:flex}.hwa{display:none}.hdrin{height:62px}.hero{margin-top:-62px;padding-top:62px}.hgrid{grid-template-columns:auto 1fr auto}.lgm{font-size:21px}.lgt{display:none}.hlogo{width:36px;height:36px}.hbtn{padding:9px 12px;font-size:10.5px}}
+@media(max-width:400px){.hbtn .bagic{display:none}.wrap{padding:0 14px}.h1{font-size:32px}.mlogo{width:200px}}
+@media(max-width:640px){.topbar{font-size:8.5px;letter-spacing:.12em;padding:8px 10px}.heroin{padding-top:40px;padding-bottom:52px;gap:32px}.heropic{aspect-ratio:4/3}.orb{width:280px;height:280px;right:-60px;top:-80px}.ctarow{flex-direction:column;align-items:stretch}.stat{padding-left:12px}.statv{font-size:18px}.shead{flex-direction:column;align-items:flex-start;gap:10px;margin-bottom:26px}.pgrid{gap:12px}.pbody{padding:12px 13px 15px}.pname{font-size:14.5px}.pmeta{font-size:9.5px}.pprice{font-size:13.5px;margin-top:6px}.pbadge{font-size:8px;padding:4px 6px}.svc{padding:26px 22px}.waband{margin-top:64px;padding:56px 0}.foot{margin-top:64px}.fgrid{grid-template-columns:1fr;gap:22px;padding-bottom:28px}.fbot{flex-direction:column;gap:8px;align-items:flex-start}.wafab{right:16px;bottom:16px;padding:12px 18px;font-size:10.5px}.qbtn{width:44px;height:46px}.chip{padding:9px 13px}.page{padding:36px 0 0}.crumb{margin-bottom:18px}.frow{grid-template-columns:1fr}.atcrow .btn{width:100%}.gthumbs{gap:8px}.pdprice{font-size:26px}.okmark{width:56px;height:56px}.atcbar{display:flex}.pdlay{padding-bottom:84px}.fword{margin-bottom:28px}.ghost{font-size:150px;bottom:-4%}.mqi{gap:30px;padding-right:30px}.scene{min-height:auto;padding:6px 0 30px}}
+</style>
+</helmet>
+<div class="{{ hdrCls }}"><div class="wrap hdrin hgrid">
+<a class="logo" onClick="{{ goHome }}"><img class="hlogo" src="assets/logo-fpc.png" alt=""><span class="lgm">FPC</span><span class="lgt">PRATAS</span></a>
+<nav class="dnav fx ac jc gap8"><button class="{{ navHomeCls }}" onClick="{{ goHome }}">Início</button><button class="{{ navShopCls }}" onClick="{{ goShop }}">Coleção</button><button class="{{ navContatoCls }}" onClick="{{ goContato }}">Contato</button></nav>
+<div class="fx ac gap12" style="justify-content:flex-end"><button class="hbtn" onClick="{{ goCart }}"><svg class="bagic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 8h12l-1 12H7L6 8z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg>Sacola<sc-if value="{{ hasCart }}" hint-placeholder-val="{{ false }}"><span class="cnt">{{ cartCount }}</span></sc-if></button><button class="{{ burgerCls }}" onClick="{{ toggleMenu }}" aria-label="Menu"><span class="bline bl1"></span><span class="bline bl2"></span><span class="bline bl3"></span></button></div>
+</div></div>
+<div class="{{ dbgCls }}" onClick="{{ closeMenu }}" style="left: 3px; top: 0px; position: absolute"></div>
+<aside class="{{ drawerCls }}"><div class="fx ac jb" style="margin-bottom:14px"><div class="logo"><img class="hlogo" src="assets/logo-fpc.png" alt="" style="width:34px;height:34px"><span class="lgm" style="font-size:19px">FPC</span><span class="lgt" style="font-size:9px">PRATAS</span></div><button class="xbtn" onClick="{{ closeMenu }}" style="font-size:24px;color:#a8a59c">×</button></div>
+<button class="dlink" onClick="{{ goHome }}">Início<span class="dnum">01</span></button>
+<button class="dlink" onClick="{{ goShop }}">Coleção<span class="dnum">02</span></button>
+<button class="dlink" onClick="{{ goCart }}">Sacola<span class="dnum">03</span></button>
+<button class="dlink" onClick="{{ goContato }}">Atendimento<span class="dnum">04</span></button>
+<a class="btn" href="{{ waMain }}" target="_blank" style="margin-top:auto"><span class="wadot"></span>Chamar no WhatsApp</a>
+<div class="dnum" style="margin-top:16px">@FPC_PRATAS · NOVA CONTAGEM — MG</div></aside>
+<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+<section class="hero grain"><span class="orb"></span><span class="ghost">925</span><div class="wrap heroin">
+<div><div class="sig au"><span class="sigline"></span><span class="sigdia"></span><span class="kick">Joalheria em prata 925</span></div>
+<h1 class="h1 au d1">Joias em <em class="shine">prata 925</em>,<br>do varejo à peça sob medida.</h1>
+<p class="lead au d2">Peças prontas, venda em atacado, solda profissional e gravação personalizada. Produção própria, envio para todo o Brasil.</p>
+<div class="fx ac gap16 ctarow au d3"><button class="btn" onClick="{{ goShop }}">Explorar coleção</button><a class="btn2" href="{{ waCustom }}" target="_blank">Solicitar personalização</a></div>
+<div class="fx gap24 au d4" style="margin-top:44px;flex-wrap:wrap"><div class="stat"><div class="statv">925</div><div class="statl">Prata de lei</div></div><div class="stat"><div class="statv">+3 mil</div><div class="statl">Clientes atendidos</div></div><div class="stat"><div class="statv">Pix</div><div class="statl">ou 3× sem juros</div></div></div></div>
+<div class="au d2 scene"><span class="pedestal"></span><div class="monu floaty"><img class="mlogo" src="assets/logo-fpc.png" alt="FPC Pratas"></div></div>
+</div><div class="scue"><span class="scline"></span></div></section>
+<div class="mq" aria-hidden="true"><div class="mqin"><span class="mqi">Prata 925 legítima<i class="sigdia"></i>Solda profissional<i class="sigdia"></i>Gravação personalizada<i class="sigdia"></i>Atacado &amp; varejo<i class="sigdia"></i>Envio para todo o Brasil<i class="sigdia"></i>Nova Contagem — MG<i class="sigdia"></i></span><span class="mqi">Prata 925 legítima<i class="sigdia"></i>Solda profissional<i class="sigdia"></i>Gravação personalizada<i class="sigdia"></i>Atacado &amp; varejo<i class="sigdia"></i>Envio para todo o Brasil<i class="sigdia"></i>Nova Contagem — MG<i class="sigdia"></i></span></div></div>
+<section class="sec"><div class="wrap rv">
+<div class="shead"><div><div class="sig"><span class="sigline"></span><span class="sigdia"></span><span class="kick">Coleção</span></div><h2 class="h2 m0" style="margin-bottom:0">Peças em destaque</h2></div><button class="tlink" onClick="{{ goShop }}">Ver toda a coleção</button></div>
+<div class="pgrid stag"><sc-for list="{{ featured }}" as="p" hint-placeholder-count="4">
+<button class="pcard" onClick="{{ p.open }}"><div class="pimg ph phx"><sc-if value="{{ p.img }}" hint-placeholder-val="{{ false }}"><span class="pph" role="img" aria-label="{{ p.name }}" style="background-image:{{ p.imgBg }}"></span></sc-if><sc-if value="{{ p.badge }}" hint-placeholder-val="{{ false }}"><span class="pbadge">Personalizável</span></sc-if><span class="phl">{{ p.phLabel }}</span></div><div class="pbody"><div class="pname">{{ p.name }}</div><div class="pmeta">{{ p.wFmt }} · {{ p.finLabel }}</div><div class="pprice">{{ p.priceFmt }}</div></div></button>
+</sc-for></div>
+</div></section>
+<section class="sec"><div class="wrap rv"><div class="difgrid">
+<div class="dif"><div class="difd"></div><div class="dift">Prata 925 legítima</div><p class="difp">Peso e teor informados na descrição de cada peça.</p></div>
+<div class="dif"><div class="difd"></div><div class="dift">Oficina própria</div><p class="difp">Produção, solda e gravação feitas internamente, sem intermediários.</p></div>
+<div class="dif"><div class="difd"></div><div class="dift">Atendimento direto</div><p class="difp">Orçamentos e dúvidas respondidos pelo WhatsApp em horário comercial.</p></div>
+<div class="dif"><div class="difd"></div><div class="dift">Envio para todo Brasil</div><p class="difp">Embalagem protegida e código de rastreio em todo pedido.</p></div>
+</div></div></section>
+<section class="sec"><div class="wrap rv">
+<div class="sig"><span class="sigline"></span><span class="sigdia"></span><span class="kick">Clientes</span></div>
+<h2 class="h2">Depoimentos</h2>
+<div class="pgrid3" style="margin-top:34px">
+<div class="quote"><p class="quott">“Levei uma corrente arrebentada em três lugares. Voltou inteira e polida, parecia nova.”</p><div class="fx ac gap12"><div class="avat">RM</div><div><div class="fw6 fs13">Rafael M.</div><div class="pmeta">Solda · Contagem</div></div></div></div>
+<div class="quote"><p class="quott">“Encomendei as alianças com gravação por dentro. Ficaram exatamente como pedimos.”</p><div class="fx ac gap12"><div class="avat">LS</div><div><div class="fw6 fs13">Larissa S.</div><div class="pmeta">Alianças gravadas</div></div></div></div>
+<div class="quote"><p class="quott">“Compro por peso pra revenda há mais de um ano. Preço justo e prata de qualidade sempre.”</p><div class="fx ac gap12"><div class="avat">JC</div><div><div class="fw6 fs13">Júlio C.</div><div class="pmeta">Atacado · BH</div></div></div></div>
+</div></div></section>
+</sc-if>
+<sc-if value="{{ isShop }}" hint-placeholder-val="{{ false }}">
+<section class="page"><div class="wrap">
+<div class="crumb"><button class="clink" onClick="{{ goHome }}">Início</button> / Coleção</div>
+<div class="sig"><span class="sigline"></span><span class="sigdia"></span><span class="kick">Catálogo</span></div>
+<h2 class="h2" style="margin-bottom:4px">Coleção</h2>
+<div class="mono fs12 mut">{{ shopCount }} peças · prata 925</div>
+<div class="shoplay">
+<aside class="fside">
+<div class="fgrp"><div class="flab">Buscar</div><div class="srchbox"><svg class="sic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg><input class="in" placeholder="Buscar peça…" value="{{ q }}" onChange="{{ onQ }}"><sc-if value="{{ hasQ }}" hint-placeholder-val="{{ false }}"><button class="sclr" onClick="{{ clearQ }}" aria-label="Limpar busca">×</button></sc-if></div></div>
+<div class="fgrp"><div class="flab">Categoria</div><div class="chips"><sc-for list="{{ catFilters }}" as="f" hint-placeholder-count="6"><button class="{{ f.cls }}" onClick="{{ f.set }}">{{ f.label }}</button></sc-for></div></div>
+<div class="fgrp"><div class="flab">Acabamento</div><div class="chips"><sc-for list="{{ finFilters }}" as="f" hint-placeholder-count="4"><button class="{{ f.cls }}" onClick="{{ f.set }}">{{ f.label }}</button></sc-for></div></div>
+<div class="fgrp"><div class="flab">Peso</div><div class="chips"><sc-for list="{{ wtFilters }}" as="f" hint-placeholder-count="5"><button class="{{ f.cls }}" onClick="{{ f.set }}">{{ f.label }}</button></sc-for></div></div>
+<div class="cbox" style="margin:0;padding:18px 20px"><div class="fs13" style="line-height:1.6"><span class="fw6">Sob encomenda</span><br><span class="mut2">Produzimos no peso, medida e modelo que você precisar.</span></div><a class="tlink" href="{{ waCustom }}" target="_blank" style="display:inline-block;margin-top:12px">Encomendar</a></div>
+</aside>
+<div><div class="pgrid pgc3"><sc-for list="{{ shopList }}" as="p" hint-placeholder-count="6">
+<button class="pcard" onClick="{{ p.open }}"><div class="pimg ph phx"><sc-if value="{{ p.img }}" hint-placeholder-val="{{ false }}"><span class="pph" role="img" aria-label="{{ p.name }}" style="background-image:{{ p.imgBg }}"></span></sc-if><sc-if value="{{ p.badge }}" hint-placeholder-val="{{ false }}"><span class="pbadge">Personalizável</span></sc-if><span class="phl">{{ p.phLabel }}</span></div><div class="pbody"><div class="pname">{{ p.name }}</div><div class="pmeta">{{ p.wFmt }} · {{ p.finLabel }}</div><div class="pprice">{{ p.priceFmt }}</div></div></button>
+</sc-for></div>
+<sc-if value="{{ shopEmpty }}" hint-placeholder-val="{{ false }}"><div class="tc" style="padding:70px 0"><div class="mono fs12 mut">Nenhuma peça encontrada.</div><button class="tlink" onClick="{{ clearFilters }}" style="margin-top:16px">Limpar filtros</button></div></sc-if>
+</div></div>
+</div></section>
+</sc-if>
+<sc-if value="{{ isProduct }}" hint-placeholder-val="{{ false }}">
+<section class="page"><div class="wrap">
+<div class="crumb"><button class="clink" onClick="{{ goHome }}">Início</button> / <button class="clink" onClick="{{ goShop }}">Coleção</button> / {{ p.name }}</div>
+<div class="pdlay">
+<div><div class="gmain ph phx"><sc-if value="{{ p.img }}" hint-placeholder-val="{{ false }}"><span class="pph" role="img" aria-label="{{ p.name }}" style="background-image:{{ p.imgBg }}"></span></sc-if><span class="phl">{{ p.phLabel }} — foto principal</span></div>
+<div class="gthumbs"><div class="gth ph"><span class="phl">detalhe</span></div><div class="gth ph"><span class="phl">no corpo</span></div><div class="gth ph"><span class="phl">verso</span></div><div class="gth ph"><span class="phl">escala</span></div></div></div>
+<div>
+<div class="kick">{{ p.catLabel }}</div>
+<h1 class="serif" style="font-size:34px;font-weight:700;margin:10px 0 0;letter-spacing:-.01em">{{ p.name }}</h1>
+<div class="pdprice pdprice-x">{{ selPriceFmt }}</div>
+<div class="mono fs11 mut">à vista no Pix · ou 3× sem juros</div>
+<div style="margin-top:22px">
+<div class="srow"><span class="slab">Material</span><span class="sval">{{ p.material }}</span></div>
+<div class="srow"><span class="slab">Peso</span><span class="sval">{{ p.wFmt }}</span></div>
+<div class="srow"><span class="slab">Dimensões</span><span class="sval">{{ p.dims }}</span></div>
+<div class="srow"><span class="slab">Acabamento</span><span class="sval">{{ p.finLabel }}</span></div>
+</div>
+<sc-if value="{{ p.anyCustom }}" hint-placeholder-val="{{ false }}">
+<div class="cbox"><div class="cboxh"><span class="sigdia"></span>Personalizar esta peça</div>
+<sc-if value="{{ p.grav }}" hint-placeholder-val="{{ false }}"><button class="crow" onClick="{{ toggleGrav }}"><span class="{{ gravCls }}">✓</span><span class="fs14">Adicionar gravação</span><span class="cprice">+ R$ 25</span></button>
+<sc-if value="{{ gravOn }}" hint-placeholder-val="{{ false }}"><input class="in mono" style="margin:4px 0 8px;font-size:13px" placeholder="Texto da gravação (até 20 caracteres)" maxLength="20" value="{{ gravText }}" onChange="{{ onGravText }}"></sc-if></sc-if>
+<button class="crow" onClick="{{ togglePol }}"><span class="{{ polCls }}">✓</span><span class="fs14">Polimento especial (espelhado)</span><span class="cprice">+ R$ 18</span></button>
+<sc-if value="{{ p.adj }}" hint-placeholder-val="{{ false }}"><button class="crow" onClick="{{ toggleAdj }}"><span class="{{ adjCls }}">✓</span><span class="fs14">Ajustar tamanho / medida</span><span class="cprice">+ R$ 15</span></button></sc-if>
+</div></sc-if>
+<div class="fx ac gap16 atcrow" style="margin-top:26px"><div class="qty"><button class="qbtn" onClick="{{ qtyDec }}">−</button><span class="qval">{{ qty }}</span><button class="qbtn" onClick="{{ qtyInc }}">+</button></div><button class="btn f1" onClick="{{ addToCart }}">Adicionar à sacola — {{ selTotalFmt }}</button></div>
+<a class="btn2 w100 bbox" href="{{ waProduct }}" target="_blank" style="margin-top:12px"><span class="wadot"></span>Falar com consultor sobre esta peça</a>
+<div style="margin-top:30px"><div class="flab">Descrição</div><p class="fs14 mut2" style="line-height:1.7;margin:0">{{ p.desc }}</p></div>
+<div style="margin-top:20px"><div class="flab">Cuidados</div><p class="fs14 mut2" style="line-height:1.7;margin:0">Guarde em local seco, evite contato com perfume e cloro. O escurecimento natural da prata sai com flanela de polimento — ou solicite nosso serviço de polimento.</p></div>
+</div></div>
+<section class="sec" style="padding-top:80px"><div class="sig"><span class="sigline"></span><span class="sigdia"></span><span class="kick">Você também pode gostar</span></div>
+<div class="pgrid3" style="margin-top:28px"><sc-for list="{{ related }}" as="p" hint-placeholder-count="3">
+<button class="pcard" onClick="{{ p.open }}"><div class="pimg ph phx"><sc-if value="{{ p.img }}" hint-placeholder-val="{{ false }}"><span class="pph" role="img" aria-label="{{ p.name }}" style="background-image:{{ p.imgBg }}"></span></sc-if><sc-if value="{{ p.badge }}" hint-placeholder-val="{{ false }}"><span class="pbadge">Personalizável</span></sc-if><span class="phl">{{ p.phLabel }}</span></div><div class="pbody"><div class="pname">{{ p.name }}</div><div class="pmeta">{{ p.wFmt }} · {{ p.finLabel }}</div><div class="pprice">{{ p.priceFmt }}</div></div></button>
+</sc-for></div></section>
+</div></section>
+<div class="atcbar"><div><div class="atcn">{{ p.name }}</div><div class="atcp">{{ selTotalFmt }}</div></div><button class="btn" onClick="{{ addToCart }}">Adicionar</button></div>
+</sc-if>
+<sc-if value="{{ isCart }}" hint-placeholder-val="{{ false }}">
+<section class="page"><div class="wrap">
+<div class="crumb"><button class="clink" onClick="{{ goHome }}">Início</button> / Sacola</div>
+<div class="sig"><span class="sigline"></span><span class="sigdia"></span><span class="kick">Sacola</span></div>
+<h2 class="h2">Sua sacola</h2>
+<sc-if value="{{ hasCart }}" hint-placeholder-val="{{ true }}">
+<div class="shoplay lay2" style="margin-top:20px">
+<div><sc-for list="{{ cartItems }}" as="it" hint-placeholder-count="2">
+<div class="cartrow"><div class="cimg ph cr-img"><sc-if value="{{ it.img }}" hint-placeholder-val="{{ false }}"><span class="pph" role="img" aria-label="{{ it.name }}" style="background-image:{{ it.imgBg }}"></span></sc-if><span class="phl fs11" style="font-size:9px">{{ it.phLabel }}</span></div>
+<div class="cr-info"><div class="pname" style="font-size:16px">{{ it.name }}</div><div class="pmeta" style="margin-top:4px">{{ it.customStr }}</div></div>
+<div class="qty cr-qty" style="transform:scale(.85);transform-origin:left"><button class="qbtn" onClick="{{ it.dec }}">−</button><span class="qval">{{ it.qty }}</span><button class="qbtn" onClick="{{ it.inc }}">+</button></div>
+<div class="fw6 fs14 tc mono cr-price">{{ it.lineFmt }}</div>
+<button class="xbtn cr-x" onClick="{{ it.rm }}">×</button></div>
+</sc-for>
+<button class="tlink" onClick="{{ goShop }}" style="margin-top:24px;display:inline-block">← Continuar comprando</button></div>
+<div class="sumcard"><div class="flab" style="margin-bottom:16px">Resumo</div>
+<div class="sumrow"><span class="mut2">Subtotal</span><span class="mono fs13">{{ subtotalFmt }}</span></div>
+<div class="sumrow"><span class="mut2">Frete</span><span class="mono fs13">{{ freteFmt }}</span></div>
+<div class="mono fs11 gold" style="padding:2px 0">frete grátis acima de R$ {{ freteMin }}</div>
+<div class="sumtot"><span>Total</span><span>{{ totalFmt }}</span></div>
+<button class="btn w100 bbox" onClick="{{ goCheckout }}" style="margin-top:18px">Finalizar compra</button>
+</div></div>
+</sc-if>
+<sc-if value="{{ cartEmpty }}" hint-placeholder-val="{{ false }}"><div class="tc" style="padding:70px 0 40px"><div class="mono fs12 mut">Sua sacola está vazia.</div><button class="btn" onClick="{{ goShop }}" style="margin-top:24px">Explorar coleção</button></div></sc-if>
+</div></section>
+</sc-if>
+<sc-if value="{{ isCheckout }}" hint-placeholder-val="{{ false }}">
+<section class="page"><div class="wrap">
+<div class="crumb"><button class="clink" onClick="{{ goCart }}">Sacola</button> / Checkout</div>
+<div class="sig"><span class="sigline"></span><span class="sigdia"></span><span class="kick">Checkout</span></div>
+<h2 class="h2">Finalizar compra</h2>
+<div class="shoplay lay3" style="margin-top:20px">
+<div>
+<div class="flab" style="margin-bottom:14px">1 — Seus dados</div>
+<div class="frow"><div><label class="lab">Nome completo</label><input class="in" placeholder="Seu nome" value="{{ ckNome }}" onChange="{{ onCkNome }}"></div><div><label class="lab">Telefone / WhatsApp</label><input class="in" type="tel" placeholder="(31) 9 0000-0000" value="{{ ckTel }}" onChange="{{ onCkTel }}"></div></div>
+<div style="margin-top:16px"><label class="lab">E-mail</label><input class="in" type="email" placeholder="voce@email.com" value="{{ ckEmail }}" onChange="{{ onCkEmail }}"></div>
+<div class="flab" style="margin:34px 0 14px">2 — Entrega</div>
+<div class="frow"><div><label class="lab">CEP</label><input class="in mono" inputMode="numeric" placeholder="32000-000" value="{{ ckCep }}" onChange="{{ onCkCep }}"></div><div><label class="lab">Cidade / UF</label><input class="in" placeholder="Contagem / MG" value="{{ ckCidade }}" onChange="{{ onCkCidade }}"></div></div>
+<div class="frow" style="margin-top:16px;grid-template-columns:2fr 1fr"><div><label class="lab">Endereço</label><input class="in" placeholder="Rua, avenida…" value="{{ ckEnd }}" onChange="{{ onCkEnd }}"></div><div><label class="lab">Número</label><input class="in" placeholder="123" value="{{ ckNum }}" onChange="{{ onCkNum }}"></div></div>
+<div class="flab" style="margin:34px 0 14px">3 — Pagamento</div>
+<div class="col gap10" style="display:flex;flex-direction:column;gap:10px">
+<button class="{{ payPixCls }}" onClick="{{ setPix }}"><span class="rdot"></span><span><span class="payt">Pix</span><div class="payd">Aprovação imediata · enviamos a chave após confirmar</div></span></button>
+<button class="{{ payCardCls }}" onClick="{{ setCard }}"><span class="rdot"></span><span><span class="payt">Cartão de crédito</span><div class="payd">Até 3× sem juros</div></span></button>
+<button class="{{ payBolCls }}" onClick="{{ setBol }}"><span class="rdot"></span><span><span class="payt">Boleto</span><div class="payd">Compensação em até 2 dias úteis</div></span></button>
+</div>
+</div>
+<div class="sumcard"><div class="flab" style="margin-bottom:16px">Seu pedido</div>
+<sc-for list="{{ cartItems }}" as="it" hint-placeholder-count="2"><div class="sumrow"><span class="mut2 fs13">{{ it.qty }}× {{ it.name }}<sc-if value="{{ it.hasCustom }}" hint-placeholder-val="{{ false }}"><br><span class="mono" style="font-size:10.5px;color:#a47864">{{ it.customStr }}</span></sc-if></span><span class="mono fs13 noshrink">{{ it.lineFmt }}</span></div></sc-for>
+<div class="sumrow"><span class="mut2">Frete</span><span class="mono fs13">{{ freteFmt }}</span></div>
+<div class="sumtot"><span>Total</span><span>{{ totalFmt }}</span></div>
+<button class="crow" onClick="{{ toggleTerms }}" style="margin-top:10px"><span class="{{ termsCls }}">✓</span><span class="fs12 mut2">Li e aceito os prazos de entrega e a política de privacidade.</span></button>
+<button class="{{ confirmCls }}" onClick="{{ placeOrder }}" style="margin-top:12px">Confirmar pedido</button>
+</div></div>
+</div></section>
+</sc-if>
+<sc-if value="{{ isConfirm }}" hint-placeholder-val="{{ false }}">
+<section class="page"><div class="wrap tc" style="max-width:560px;padding-top:80px;padding-bottom:40px">
+<div class="okmark"><span class="okin">✓</span></div>
+<div class="kick">Pedido confirmado</div>
+<h2 class="h2" style="font-size:34px">Recebemos seu pedido.</h2>
+<div class="mono fs14" style="background:#fff;border:1px solid #e5e1d8;display:inline-block;padding:12px 22px;margin:8px 0 18px">Pedido <span class="fw7 gold">#{{ orderNum }}</span></div>
+<p class="mut2 fs14" style="line-height:1.7">Seu pedido foi montado no WhatsApp — é só tocar em enviar para confirmar com a gente. Se a conversa não abriu, use o botão abaixo. Peças com gravação entram em produção em até 2 dias úteis.</p>
+<div class="fx jc gap16" style="margin-top:26px;flex-wrap:wrap"><a class="btn" href="{{ waShare }}" target="_blank"><span class="wadot"></span>Enviar pedido no WhatsApp</a><button class="btn2" onClick="{{ goShop }}">Voltar à coleção</button></div>
+</div></section>
+</sc-if>
+<sc-if value="{{ isContato }}" hint-placeholder-val="{{ false }}">
+<section class="page"><div class="wrap">
+<div class="crumb"><button class="clink" onClick="{{ goHome }}">Início</button> / Atendimento</div>
+<div class="sig"><span class="sigline"></span><span class="sigdia"></span><span class="kick">Atendimento</span></div>
+<h2 class="h2">Atendimento</h2>
+<div class="shoplay lay3" style="margin-top:20px">
+<div>
+<sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+<div class="frow"><div><label class="lab">Nome</label><input class="in" placeholder="Seu nome" value="{{ ctNome }}" onChange="{{ onCtNome }}"></div><div><label class="lab">WhatsApp</label><input class="in" type="tel" placeholder="(31) 9 0000-0000" value="{{ ctTel }}" onChange="{{ onCtTel }}"></div></div>
+<div style="margin-top:16px"><label class="lab">Como podemos ajudar?</label><textarea class="in" rows="5" placeholder="Conte sobre a peça, solda ou personalização que você precisa…" value="{{ ctMsg }}" onChange="{{ onCtMsg }}"></textarea></div>
+<button class="btn" onClick="{{ sendMsg }}" style="margin-top:18px">Enviar mensagem</button>
+</sc-if>
+<sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}"><div class="cbox tc" style="padding:44px 24px"><div class="sig c" style="margin-bottom:16px"><span class="sigline"></span><span class="sigdia"></span><span class="sigline"></span></div><div class="fw6 fs15">Sua mensagem está pronta no WhatsApp!</div><p class="mut2 fs13" style="margin:8px 0 0">Abrimos a conversa com o texto preenchido — é só tocar em enviar. Respondemos em horário comercial, normalmente em poucos minutos.</p></div></sc-if>
+<div style="margin-top:48px"><div class="flab" style="margin-bottom:18px">Perguntas frequentes</div>
+<div class="faqq">Como sei o tamanho do meu anel?</div><p class="faqa">Meça o diâmetro interno de um anel que já serve, ou chame no WhatsApp que enviamos o gabarito de medidas.</p>
+<div class="faqq">A prata escurece?</div><p class="faqa">A prata 925 oxida naturalmente com o tempo. É normal e reversível — polimos sua peça sempre que precisar.</p>
+<div class="faqq">Quanto tempo leva uma gravação?</div><p class="faqa">Gravações entram em produção em até 2 dias úteis. Encomendas sob medida variam conforme o desenho — combinamos o prazo antes.</p>
+<div class="faqq">Vocês vendem em massa para revenda?</div><p class="faqa">Sim — argolas, correntes, anéis e pulseiras por peso. Chame no WhatsApp para tabela de atacado.</p>
+</div></div>
+<div><div class="sumcard" style="position:static">
+<a class="btn w100 bbox" href="{{ waMain }}" target="_blank"><span class="wadot"></span>Chamar no WhatsApp</a>
+<div style="margin-top:26px"><div class="flab">Horário</div><div class="fs14" style="line-height:1.8">Seg — Sex · 9h às 18h<br>Sábado · 9h às 13h</div></div>
+<div style="margin-top:22px"><div class="flab">Onde estamos</div><div class="fs14" style="line-height:1.8">Nova Contagem<br>Contagem — MG</div></div>
+<div style="margin-top:22px"><div class="flab">Redes</div><a class="flink" style="color:#45443f" href="https://www.instagram.com/fpc_pratas/" target="_blank">Instagram · @fpc_pratas</a><a class="flink" style="color:#45443f" href="https://www.facebook.com/299398896598348" target="_blank">Facebook · FPC Pratas</a></div>
+</div></div>
+</div></div></section>
+</sc-if>
+<footer class="{{ footCls }}"><div class="wrap">
+<div class="fword">FPC Pratas</div>
+<div class="fgrid">
+<div><div class="logo" style="cursor:default"><img class="hlogo" src="assets/logo-fpc.png" alt="" style="width:38px;height:38px"><span class="lgm" style="font-size:22px">FPC</span><span class="lgt">PRATAS</span></div><p class="fs13" style="line-height:1.7;max-width:34ch;margin-top:14px">Joalheria em prata 925 — varejo, atacado, solda profissional e personalização. Produção própria em Nova Contagem, MG.</p></div>
+<div><div class="fh">Navegação</div><button class="flink" onClick="{{ goHome }}">Início</button><button class="flink" onClick="{{ goShop }}">Coleção</button><button class="flink" onClick="{{ goContato }}">Atendimento</button><button class="flink" onClick="{{ goCart }}">Sacola</button></div>
+<div><div class="fh">Atendimento</div><div class="fs13" style="line-height:2">Seg–Sex · 9h às 18h<br>Sáb · 9h às 13h<br>Nova Contagem — MG</div></div>
+<div><div class="fh">Redes</div><a class="flink" href="https://www.instagram.com/fpc_pratas/" target="_blank">Instagram</a><a class="flink" href="https://www.facebook.com/299398896598348" target="_blank">Facebook</a><a class="flink" href="{{ waMain }}" target="_blank">WhatsApp</a></div>
+</div>
+<div class="fbot"><span>© 2026 FPC Pratas · Nova Contagem, MG</span><a class="clink" href="admin.html" style="color:#4a4a45">área administrativa</a></div>
+</div></footer>
+<sc-if value="{{ showFab }}" hint-placeholder-val="{{ false }}"><a class="wafab" href="{{ waMain }}" target="_blank"><span class="wadot"></span>WhatsApp</a></sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900},&quot;corAccent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#a47864&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#a47864&quot;,&quot;#8b6f5c&quot;,&quot;#c8cdd4&quot;],&quot;section&quot;:&quot;Aparência&quot;},&quot;freteGratis&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:300,&quot;min&quot;:0,&quot;max&quot;:1000,&quot;unit&quot;:&quot;R$&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Loja&quot;},&quot;botaoWhatsApp&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Loja&quot;}}">
+class Component extends DCLogic {
+  state = { route:'home', menuOpen:false, scrolled:false, q:'', pid:6, cat:'todos', fin:'todos', wt:'todos', qty:1, grav:false, gravText:'', pol:false, adj:false, cart:[], pay:'pix', terms:false, sent:false, orderNum:'', orderMsg:'', ckNome:'', ckTel:'', ckEmail:'', ckCep:'', ckCidade:'', ckEnd:'', ckNum:'', ctNome:'', ctTel:'', ctMsg:'' };
+  nrm(t){ return t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
+  P = [
+    {id:1,name:'Anel Clássico 925',cat:'anel',w:5,price:89,fin:'polido',dims:'aro 8 a 33',material:'Prata 925',grav:false,adj:true,ph:'foto: anel clássico',desc:'Aro liso de linhas contínuas, confortável para uso diário. Feito em prata 925 maciça, com acabamento polido de alto brilho.'},
+    {id:2,name:'Colar Corrente Fina',cat:'colar',w:8,price:120,fin:'polido',dims:'45cm × 1,8mm',material:'Prata 925',grav:false,adj:true,ph:'foto: corrente fina',desc:'Corrente veneziana fina, ideal para pingentes leves. Fecho lagosta reforçado em prata 925.'},
+    {id:3,name:'Pulseira Elo Quadrado',cat:'pulseira',w:12,price:180,fin:'polido',dims:'19cm × 4mm',material:'Prata 925',grav:false,adj:true,ph:'foto: pulseira elo quadrado',desc:'Elos quadrados soldados um a um na nossa bancada. Peça de presença, com peso real de 12g.'},
+    {id:4,name:'Aliança Fosca',cat:'alianca',w:4,price:110,fin:'acetinado',dims:'aro sob medida',material:'Prata 925',grav:true,adj:true,ph:'foto: aliança fosca',desc:'Aliança de perfil anatômico com acabamento acetinado. Aceita gravação interna de nomes ou datas.'},
+    {id:5,name:'Brinco Bolinha (par)',cat:'acessorio',w:2,price:45,fin:'polido',dims:'esfera 6mm',material:'Prata 925',grav:false,adj:false,ph:'foto: brinco bolinha',desc:'Par de brincos esfera com tarraxa de rosca. Clássico que combina com tudo.'},
+    {id:6,name:'Anel Signet Personalizado',cat:'anel',w:15,price:240,fin:'polido',dims:'base 12 × 10mm',material:'Prata 925',grav:true,adj:true,ph:'foto: anel signet',desc:'Nosso signet de base oval maciça, pronto para receber sua inicial, brasão ou símbolo gravado. Cada peça é finalizada à mão.'},
+    {id:7,name:'Colar Pingente Geométrico',cat:'colar',w:6,price:95,fin:'polido',dims:'corrente 40cm',material:'Prata 925',grav:false,adj:false,ph:'foto: pingente geométrico',desc:'Pingente de faces facetadas que refletem a luz a cada movimento, com corrente veneziana inclusa.'},
+    {id:8,name:'Pulseira Banhada a Ouro',cat:'pulseira',w:10,price:165,fin:'polido',dims:'18cm × 3mm',material:'Prata 925 · banho ouro 18k',grav:false,adj:true,ph:'foto: pulseira banhada',desc:'Base em prata 925 com banho de ouro 18k de alta espessura. O melhor dos dois metais.'},
+    {id:9,name:'Corrente Grumet 60cm',cat:'colar',w:22,price:320,fin:'polido',dims:'60cm × 5mm',material:'Prata 925',grav:false,adj:true,ph:'foto: corrente grumet',desc:'Grumet tradicional de 22g, elo batido e soldado. Feita para durar gerações — e a gente conserta se precisar.'},
+    {id:10,name:'Aliança Espelhada (par)',cat:'alianca',w:9,price:260,fin:'polido',dims:'par sob medida',material:'Prata 925',grav:true,adj:true,ph:'foto: par de alianças',desc:'Par de alianças com polimento espelhado e gravação interna inclusa no serviço de personalização.'},
+    {id:11,name:'Anel Oxidado Trançado',cat:'anel',w:7,price:130,fin:'oxidado',dims:'aro 12 a 30',material:'Prata 925',grav:false,adj:true,ph:'foto: anel oxidado',desc:'Trança de fios de prata com oxidação proposital nos vales, destacando o relevo. Estilo com assinatura.'},
+    {id:12,name:'Argola Média (par)',cat:'acessorio',w:4,price:75,fin:'polido',dims:'Ø 22mm',material:'Prata 925',grav:false,adj:false,ph:'foto: argolas',desc:'Argolas de tubo redondo com fecho embutido. Vendidas também em massa para revenda.'},
+    {id:13,name:'Colar Borboleta Cravejada',cat:'colar',w:4,price:149,fin:'polido',dims:'corrente 45cm',material:'Prata 925',grav:false,adj:true,ph:'foto: colar borboleta',desc:'Borboleta cravejada em zircônias rosa sobre corrente veneziana. Delicada no corpo, brilhante em qualquer luz.'},
+    {id:14,name:'Pingente Crucifixo',cat:'acessorio',w:9,price:129,fin:'polido',dims:'4,5 × 2,8cm',material:'Prata 925',grav:false,adj:false,ph:'foto: pingente crucifixo',desc:'Crucifixo modelado à mão com amarração em fio de prata no centro. Peça maciça, de presença.'},
+    {id:15,name:'Conjunto Ponto de Luz',cat:'colar',w:5,price:179,fin:'polido',dims:'corrente 40cm',material:'Prata 925',grav:false,adj:true,ph:'foto: conjunto ponto de luz',desc:'Conjunto colar + brincos de coração em ônix sobre prata 925 — o clássico que acompanha todo look.'},
+    {id:16,name:'Conjunto 3x1 · 70cm',cat:'colar',w:62,price:890,fin:'polido',dims:'70cm × 10mm',material:'Prata 925',grav:false,adj:true,ph:'foto: conjunto 3x1',desc:'Conjunto corrente + pulseira no modelo 3x1, elos maciços de 10mm polidos um a um. Para quem quer peso de verdade.'},
+    {id:17,name:'Colar V12',cat:'colar',w:34,price:520,fin:'polido',dims:'60cm × 6mm',material:'Prata 925',grav:false,adj:true,ph:'foto: colar V12',desc:'Corrente V12 de elos diamantados que refletem luz a cada movimento. Fecho gaveta reforçado.'}
+  ];
+  FINS = {polido:'Polido espelhado',acetinado:'Acetinado',oxidado:'Oxidado'};
+  CATS = {anel:'Anéis',colar:'Colares',pulseira:'Pulseiras',alianca:'Alianças',acessorio:'Acessórios'};
+  WA = 'https://wa.me/553184937038';
+  IMGS = {
+    13:'assets/colar-borboleta.png',
+    14:'assets/pingente-crucifixo.png',
+    15:'assets/conjunto-ponto-de-luz.png',
+    16:'assets/conjunto-3x1.png'
+  };
+  fmt(v){ return 'R$ ' + v.toLocaleString('pt-BR'); }
+  wa(msg){ return this.WA + '?text=' + encodeURIComponent(msg); }
+  go(route, pid){ this.setState({route, menuOpen:false, pid: pid ?? this.state.pid, qty:1, grav:false, gravText:'', pol:false, adj:false}); }
+  componentDidMount(){
+    this.applyAccent();
+    try{
+      const saved = JSON.parse(localStorage.getItem('fpc-cart')||'[]');
+      if(Array.isArray(saved) && saved.length){
+        const cart = saved.filter(c=>c && this.P.some(p=>p.id===c.pid) && c.qty>0);
+        if(cart.length) this.setState({cart});
+      }
+    }catch(e){}
+    if(window.matchMedia && matchMedia('(hover:hover) and (prefers-reduced-motion: no-preference)').matches){
+      this._pl = e=>{ const x=e.clientX/window.innerWidth-.5, y=e.clientY/window.innerHeight-.5; document.body.style.setProperty('--mx',x.toFixed(3)); document.body.style.setProperty('--my',y.toFixed(3)); };
+      window.addEventListener('mousemove',this._pl,{passive:true});
+    }
+    this._sc = ()=>{ let th = 8; if(this.state.route==='home'){ const h = document.querySelector('.hero'); th = h ? Math.max(h.offsetHeight-96, 120) : 430; } const sc = (window.scrollY||0) >= th; if(sc !== this.state.scrolled) this.setState({scrolled:sc}); };
+    window.addEventListener('scroll',this._sc,{passive:true});
+    this._sc();
+  }
+  componentWillUnmount(){ if(this._pl) window.removeEventListener('mousemove',this._pl); if(this._sc) window.removeEventListener('scroll',this._sc); }
+  componentDidUpdate(){ this.applyAccent(); const k = this.state.route+':'+this.state.pid; if(this._navKey !== undefined && this._navKey !== k) window.scrollTo(0,0); this._navKey = k; if(this._sc) this._sc(); try{ const j = JSON.stringify(this.state.cart); if(j !== this._cartJson){ this._cartJson = j; localStorage.setItem('fpc-cart', j); } }catch(e){} }
+  applyAccent(){ document.body.style.setProperty('--gold', this.props.corAccent ?? '#a47864'); }
+  enrich(p){ return {...p, img:this.IMGS[p.id], imgBg:this.IMGS[p.id]?'url("'+this.IMGS[p.id]+'")':null, priceFmt:this.fmt(p.price), wFmt:p.w+'g', finLabel:this.FINS[p.fin], catLabel:this.CATS[p.cat], phLabel:p.ph, badge:p.grav, anyCustom:true, open:()=>this.go('product',p.id)}; }
+  renderVals(){
+    const s = this.state, freteMin = this.props.freteGratis ?? 300;
+    const cur = this.P.find(p=>p.id===s.pid) || this.P[0];
+    const unit = cur.price + (s.grav?25:0) + (s.pol?18:0) + (s.adj?15:0);
+    const mkFilters = (key, opts) => opts.map(([v,label])=>({label, cls: s[key]===v?'chip on':'chip', set:()=>this.setState({[key]:v})}));
+    const inWt = p => s.wt==='todos' || (s.wt==='ate5'&&p.w<=5) || (s.wt==='5a10'&&p.w>5&&p.w<=10) || (s.wt==='10a20'&&p.w>10&&p.w<=20) || (s.wt==='20p'&&p.w>20);
+    const qq = this.nrm(s.q.trim());
+    const list = this.P.filter(p=>(s.cat==='todos'||p.cat===s.cat)&&(s.fin==='todos'||p.fin===s.fin)&&inWt(p)&&(!qq||this.nrm(p.name).includes(qq)||this.nrm(this.CATS[p.cat]).includes(qq)));
+    const cartItems = s.cart.map((c,i)=>{
+      const p = this.P.find(x=>x.id===c.pid);
+      const parts = [];
+      if(c.grav) parts.push('Gravação: “'+(c.gravText||'—')+'”');
+      if(c.pol) parts.push('Polimento especial');
+      if(c.adj) parts.push('Ajuste de medida');
+      const u = p.price+(c.grav?25:0)+(c.pol?18:0)+(c.adj?15:0);
+      return {name:p.name, img:this.IMGS[p.id], imgBg:this.IMGS[p.id]?'url("'+this.IMGS[p.id]+'")':null, phLabel:p.ph, qty:c.qty, hasCustom:parts.length>0, customStr:parts.length?parts.join(' · '):p.w+'g · '+this.FINS[p.fin], lineFmt:this.fmt(u*c.qty),
+        inc:()=>{const cart=[...s.cart]; cart[i]={...c,qty:c.qty+1}; this.setState({cart});},
+        dec:()=>{const cart=[...s.cart]; if(c.qty>1){cart[i]={...c,qty:c.qty-1}; this.setState({cart});}},
+        rm:()=>this.setState({cart:s.cart.filter((_,j)=>j!==i)})};
+    });
+    const subtotal = s.cart.reduce((t,c)=>{const p=this.P.find(x=>x.id===c.pid); return t+(p.price+(c.grav?25:0)+(c.pol?18:0)+(c.adj?15:0))*c.qty;},0);
+    const frete = subtotal>0 && subtotal<freteMin ? 24 : 0;
+    const cartCount = s.cart.reduce((t,c)=>t+c.qty,0);
+    return {
+      isHome:s.route==='home', isShop:s.route==='shop', isProduct:s.route==='product', isCart:s.route==='cart', isCheckout:s.route==='checkout', isConfirm:s.route==='confirm', isContato:s.route==='contato',
+      hdrCls:(s.route==='home'&&!s.scrolled)?'hdr':'hdr lite',
+      q:s.q, hasQ:s.q.length>0, onQ:e=>this.setState({q:e.target.value}), clearQ:()=>this.setState({q:''}),
+      navHomeCls:s.route==='home'?'nlink non':'nlink', navShopCls:(s.route==='shop'||s.route==='product')?'nlink non':'nlink', navContatoCls:s.route==='contato'?'nlink non':'nlink',
+      goHome:()=>this.go('home'), goShop:()=>this.go('shop'), goCart:()=>this.go('cart'), goCheckout:()=>this.go('checkout'), goContato:()=>this.go('contato'),
+      footCls:'foot grain',
+      ringPanels:[...'FPC PRATAS · PRATA 925 · FEITA À MÃO · '].map((ch,i,arr)=>{const a=(i*360/arr.length).toFixed(2);return {ch:ch===' '?'\u00a0':ch, t:'rotateY('+a+'deg) translateZ(150px)', ti:'rotateY('+a+'deg) translateZ(147px) rotateY(180deg)'};}),
+      burgerCls:s.menuOpen?'burger open':'burger', drawerCls:s.menuOpen?'drawer open':'drawer', dbgCls:s.menuOpen?'dbg show':'dbg',
+      toggleMenu:()=>this.setState({menuOpen:!s.menuOpen}), closeMenu:()=>this.setState({menuOpen:false}),
+      waMain:this.wa('Olá, FPC Pratas! Vim pelo site e queria tirar uma dúvida.'),
+      waCustom:this.wa('Olá! Quero encomendar uma peça personalizada. Podemos conversar?'),
+      waSolda:this.wa('Olá! Preciso de um orçamento de solda/reparo em prata.'),
+      waProduct:this.wa('Olá! Tenho interesse na peça '+cur.name+' ('+this.fmt(unit)+'). Pode me ajudar?'),
+      waShare:this.wa(s.orderMsg || ('Olá! Acabei de fazer o pedido #'+s.orderNum+' no site. Pode me confirmar o prazo?')),
+      featured:[13,14,15,16].map(id=>this.enrich(this.P.find(p=>p.id===id))),
+      catFilters:mkFilters('cat',[['todos','Todas'],['anel','Anéis'],['colar','Colares'],['pulseira','Pulseiras'],['alianca','Alianças'],['acessorio','Acessórios']]),
+      finFilters:mkFilters('fin',[['todos','Todos'],['polido','Polido'],['acetinado','Acetinado'],['oxidado','Oxidado']]),
+      wtFilters:mkFilters('wt',[['todos','Todos'],['ate5','até 5g'],['5a10','5–10g'],['10a20','10–20g'],['20p','20g+']]),
+      shopList:list.map(p=>this.enrich(p)), shopCount:list.length, shopEmpty:list.length===0,
+      clearFilters:()=>this.setState({cat:'todos',fin:'todos',wt:'todos',q:''}),
+      p:this.enrich(cur),
+      related:this.P.filter(p=>p.id!==cur.id&&p.cat===cur.cat).concat(this.P.filter(p=>p.id!==cur.id&&p.cat!==cur.cat)).slice(0,3).map(p=>this.enrich(p)),
+      qty:s.qty, qtyInc:()=>this.setState({qty:s.qty+1}), qtyDec:()=>this.setState({qty:Math.max(1,s.qty-1)}),
+      gravOn:s.grav, gravText:s.gravText, onGravText:e=>this.setState({gravText:e.target.value}),
+      gravCls:s.grav?'cb on':'cb', polCls:s.pol?'cb on':'cb', adjCls:s.adj?'cb on':'cb',
+      toggleGrav:()=>this.setState({grav:!s.grav}), togglePol:()=>this.setState({pol:!s.pol}), toggleAdj:()=>this.setState({adj:!s.adj}),
+      selPriceFmt:this.fmt(unit), selTotalFmt:this.fmt(unit*s.qty),
+      addToCart:()=>this.setState({cart:[...s.cart,{pid:cur.id,qty:s.qty,grav:s.grav,gravText:s.gravText,pol:s.pol,adj:s.adj}],route:'cart'}),
+      cartItems, cartCount, hasCart:cartCount>0, cartEmpty:cartCount===0,
+      subtotalFmt:this.fmt(subtotal), freteFmt:frete===0?(subtotal>0?'Grátis':'—'):this.fmt(frete), totalFmt:this.fmt(subtotal+frete), freteMin,
+      payPixCls:s.pay==='pix'?'pay on':'pay', payCardCls:s.pay==='card'?'pay on':'pay', payBolCls:s.pay==='boleto'?'pay on':'pay',
+      setPix:()=>this.setState({pay:'pix'}), setCard:()=>this.setState({pay:'card'}), setBol:()=>this.setState({pay:'boleto'}),
+      termsCls:s.terms?'cb on':'cb', toggleTerms:()=>this.setState({terms:!s.terms}),
+      confirmCls:s.terms&&cartCount>0?'btn w100 bbox':'btn w100 bbox',
+      ckNome:s.ckNome, onCkNome:e=>this.setState({ckNome:e.target.value}),
+      ckTel:s.ckTel, onCkTel:e=>this.setState({ckTel:e.target.value}),
+      ckEmail:s.ckEmail, onCkEmail:e=>this.setState({ckEmail:e.target.value}),
+      ckCep:s.ckCep, onCkCep:e=>this.setState({ckCep:e.target.value}),
+      ckCidade:s.ckCidade, onCkCidade:e=>this.setState({ckCidade:e.target.value}),
+      ckEnd:s.ckEnd, onCkEnd:e=>this.setState({ckEnd:e.target.value}),
+      ckNum:s.ckNum, onCkNum:e=>this.setState({ckNum:e.target.value}),
+      placeOrder:()=>{
+        if(!s.terms||cartCount===0) return;
+        if(!s.ckNome.trim()||!s.ckTel.trim()){ alert('Preencha seu nome e WhatsApp para finalizar o pedido.'); return; }
+        const num = String(1000+Math.floor(Math.random()*9000));
+        const payLabel = s.pay==='pix'?'Pix':s.pay==='card'?'Cartão de crédito (até 3×)':'Boleto';
+        const endParts = [s.ckEnd.trim()+(s.ckNum.trim()?', '+s.ckNum.trim():''), s.ckCidade.trim(), s.ckCep.trim()?'CEP '+s.ckCep.trim():''].filter(t=>t&&t!==', ');
+        const msg = 'NOVO PEDIDO #'+num+' — site FPC Pratas\n\n'
+          + cartItems.map(it=>'• '+it.qty+'× '+it.name+(it.hasCustom?' ('+it.customStr+')':'')+' — '+it.lineFmt).join('\n')
+          + '\n\nSubtotal: '+this.fmt(subtotal)
+          + '\nFrete: '+(frete===0?'Grátis':this.fmt(frete))
+          + '\nTotal: '+this.fmt(subtotal+frete)
+          + '\nPagamento: '+payLabel
+          + '\n\nCliente: '+s.ckNome.trim()
+          + '\nWhatsApp: '+s.ckTel.trim()
+          + (s.ckEmail.trim()?'\nE-mail: '+s.ckEmail.trim():'')
+          + (endParts.length?'\nEntrega: '+endParts.join(' · '):'');
+        this.setState({route:'confirm', orderNum:num, orderMsg:msg, cart:[], terms:false});
+        window.open(this.wa(msg),'_blank');
+      },
+      orderNum:s.orderNum,
+      sent:s.sent, notSent:!s.sent,
+      ctNome:s.ctNome, onCtNome:e=>this.setState({ctNome:e.target.value}),
+      ctTel:s.ctTel, onCtTel:e=>this.setState({ctTel:e.target.value}),
+      ctMsg:s.ctMsg, onCtMsg:e=>this.setState({ctMsg:e.target.value}),
+      sendMsg:()=>{
+        if(!s.ctMsg.trim()){ alert('Escreva sua mensagem antes de enviar.'); return; }
+        const m = 'Olá! Vim pelo site.'
+          + (s.ctNome.trim()?'\nNome: '+s.ctNome.trim():'')
+          + (s.ctTel.trim()?'\nWhatsApp: '+s.ctTel.trim():'')
+          + '\n\n'+s.ctMsg.trim();
+        window.open(this.wa(m),'_blank');
+        this.setState({sent:true});
+      },
+      showFab:(this.props.botaoWhatsApp ?? true) && s.route!=='checkout' && s.route!=='product'
+    };
+  }
+}
+</script>
+</body>
+</html>
