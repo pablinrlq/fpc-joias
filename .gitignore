@@ -1,0 +1,8 @@
+# Prévia self-contained gerada (7+ MB, fotos/fontes embutidas como data URI).
+# É um build regenerável — não faz parte do site publicado (que usa as imagens
+# em assets/). Gere localmente quando precisar mostrar uma prévia offline.
+preview.html
+
+# Ruído comum
+.DS_Store
+node_modules/
