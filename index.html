@@ -128,21 +128,25 @@
 .quote{background:#fff;border:1px solid #dfe3e7;padding:48px 28px 30px;position:relative}
 .quott{font-family:'Playfair Display',serif;font-style:italic;font-size:16.5px;line-height:1.6;margin:0 0 22px}
 .avat{width:40px;height:40px;border-radius:50%;background:#141310;color:var(--gold);display:flex;align-items:center;justify-content:center;font:600 12px 'IBM Plex Mono',monospace;flex:none}
-.foot{background:#101216;color:#a8a59c;padding:0;margin-top:96px;overflow:hidden;background-image:radial-gradient(820px 430px at 80% 4%,rgba(214,219,226,.11),transparent 64%),linear-gradient(115deg,transparent 49.85%,rgba(220,224,230,.08) 49.85%,rgba(220,224,230,.08) 50.15%,transparent 50.15%),linear-gradient(65deg,transparent 72%,rgba(255,255,255,.035) 72%,rgba(255,255,255,.035) 72.15%,transparent 72.15%)}
+.foot{background:#101216;color:#b7bec6;padding:0;margin-top:96px;overflow:hidden;background-image:radial-gradient(820px 430px at 80% 4%,rgba(214,219,226,.11),transparent 64%),linear-gradient(115deg,transparent 49.85%,rgba(220,224,230,.08) 49.85%,rgba(220,224,230,.08) 50.15%,transparent 50.15%),linear-gradient(65deg,transparent 72%,rgba(255,255,255,.035) 72%,rgba(255,255,255,.035) 72.15%,transparent 72.15%)}
 .footerghost{position:absolute;left:-2%;top:40px;font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(150px,23vw,330px);line-height:.8;color:transparent;-webkit-text-stroke:1px rgba(201,206,212,.1);pointer-events:none;user-select:none}
 .footerbrand{position:relative;padding:88px 0 78px;color:#eceff2}
 .footerbrandin{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:64px}
 .footerheadline{font-family:'Playfair Display',serif;font-size:clamp(34px,5vw,58px);font-weight:700;line-height:1.04;letter-spacing:-.02em;margin:20px 0 18px;text-wrap:balance}
-.footercopy{max-width:48ch;margin:0;color:#bcc2c9;font-size:14px;line-height:1.75}
+.footercopy{max-width:48ch;margin:0;color:#c7cdd4;font-size:14px;line-height:1.75}
 .footerstats{display:flex;gap:24px;flex-wrap:wrap;margin-top:40px}
+.footerstats .stat{border-color:rgba(194,200,207,.35)}
+.footerstats .statv{color:#f7f8fa}
+.footerstats .statl{color:#aeb6c0}
 .footerart{position:relative;display:flex;align-items:center;justify-content:center;min-height:360px}
 .footerlogo{position:relative;width:min(320px,72vw);height:auto;filter:drop-shadow(0 18px 40px rgba(0,0,0,.5));z-index:1}
-.footerbase{position:relative;border-top:1px solid rgba(255,255,255,.08);background:rgba(7,8,10,.46);padding-top:38px}
+.footerbase{position:relative;border-top:1px solid rgba(194,200,207,.14);background:rgba(7,9,12,.56);padding-top:38px}
 .fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:38px;padding-bottom:36px}
-.fh{font:600 11px 'Inter',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#eceae4;margin-bottom:18px}
-.flink{display:block;color:#a8a59c;text-decoration:none;font-size:13.5px;padding:5px 0;cursor:pointer;background:none;border:0;text-align:left;font-family:'Inter',sans-serif;transition:color .2s}
+.fh{font:600 11px 'Inter',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#eef1f4;margin-bottom:18px}
+.flink{display:block;color:#b7bec6;text-decoration:none;font-size:13.5px;padding:5px 0;cursor:pointer;background:none;border:0;text-align:left;font-family:'Inter',sans-serif;transition:color .2s}
 .flink:hover{color:var(--gold)}
-.fbot{border-top:1px solid rgba(255,255,255,.08);padding:20px 0;display:flex;justify-content:space-between;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em}
+.foot .flink:hover{color:#ffffff}
+.fbot{border-top:1px solid rgba(194,200,207,.14);color:#8f98a3;padding:20px 0;display:flex;justify-content:space-between;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em}
 .wafab{position:fixed;left:26px;bottom:26px;z-index:80;display:flex;align-items:center;gap:10px;background:#101216;color:#eceff2;border:1px solid rgba(190,197,205,.55);padding:14px 22px;border-radius:999px;font:600 11.5px 'Inter',sans-serif;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.4);transition:all .2s}
 .wafab:hover{transform:translateY(-2px);border-color:var(--gold)}
 .wadot{width:8px;height:8px;border-radius:50%;background:#57c46a;box-shadow:0 0 8px rgba(87,196,106,.8)}
@@ -328,7 +332,7 @@ html{-webkit-tap-highlight-color:transparent}
 <div class="mq mqhero" aria-hidden="true"><div class="mqin"><span class="mqi">Prata 925 legítima<i class="sigdia"></i>Joias masculinas<i class="sigdia"></i>Joias femininas<i class="sigdia"></i>Manutenção e polimento<i class="sigdia"></i>Alianças de prata<i class="sigdia"></i>Garantia vitalícia<i class="sigdia"></i></span><span class="mqi">Prata 925 legítima<i class="sigdia"></i>Joias masculinas<i class="sigdia"></i>Joias femininas<i class="sigdia"></i>Manutenção e polimento<i class="sigdia"></i>Alianças de prata<i class="sigdia"></i>Garantia vitalícia<i class="sigdia"></i></span></div></div>
 <section class="sec home-products"><div class="wrap rv">
 <div class="shead"><div><div class="sig"><span class="sigline"></span><span class="sigdia"></span><span class="kick">Coleção</span></div><h2 class="h2 m0" style="margin-bottom:0">Peças em destaque</h2></div><button class="tlink" onClick="{{ goShop }}">Ver toda a coleção</button></div>
-<div class="pgrid stag"><sc-for list="{{ featured }}" as="p" hint-placeholder-count="4">
+<div class="pgrid stag"><sc-for list="{{ featured }}" as="p" hint-placeholder-count="8">
 <button class="pcard" onClick="{{ p.open }}"><div class="pimg ph phx"><sc-if value="{{ p.img }}" hint-placeholder-val="{{ false }}"><span class="pph" role="img" aria-label="{{ p.name }}" style="background-image:{{ p.imgBg }}"></span></sc-if><sc-if value="{{ p.badge }}" hint-placeholder-val="{{ false }}"><span class="pbadge">Personalizável</span></sc-if><span class="phl">{{ p.phLabel }}</span></div><div class="pbody"><div class="pname">{{ p.name }}</div><div class="pmeta">{{ p.wFmt }} · {{ p.finLabel }}</div><div class="pprice">{{ p.priceFmt }}</div></div></button>
 </sc-for></div>
 </div></section>
@@ -472,7 +476,7 @@ class Component extends DCLogic {
     const mkFilters=(key,opts)=>opts.map(([v,label])=>({label,cls:s[key]===v?'chip on':'chip',set:()=>this.setState({[key]:v})}));
     const qq=this.nrm(s.q.trim());
     const list=this.P.filter(p=>(s.audience==='todos'||p.audience===s.audience)&&(s.type==='todos'||p.type===s.type)&&(!qq||this.nrm([p.name,p.detail,this.AUDIENCES[p.audience],this.TYPES[p.type]].join(' ')).includes(qq)));
-    const featured=this.P.filter(p=>p.featured).slice(0,4);
+    const featured=this.P.filter(p=>p.featured).slice(0,8);
     const related=this.P.filter(p=>p.id!==cur.id&&p.type===cur.type).concat(this.P.filter(p=>p.id!==cur.id&&p.type!==cur.type)).slice(0,3);
     const productMessage='Olá! Tenho interesse na peça '+(cur.name||'do catálogo')+(cur.detail?' ('+cur.detail+')':'')+'. Pode me ajudar?';
     return {
