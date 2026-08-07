@@ -1,8 +1,13 @@
 /*
  * Catálogo FPC Pratas
  *
- * Para adicionar uma foto depois, coloque o arquivo dentro de project/assets/
- * e preencha o campo image, por exemplo: image: 'assets/minha-peca.jpg'.
+ * Cada produto usa somente duas fotos:
+ * - image: foto principal, com fundo preto e a logo da FPC Pratas;
+ * - detailImage: foto de detalhe da peça na mão.
+ *
+ * Coloque os arquivos em assets/ e preencha, por exemplo:
+ * image: 'assets/minha-peca-principal.jpg',
+ * detailImage: 'assets/minha-peca-detalhe.jpg'.
  */
 window.FPC_CATALOG = [
   { id: 'corrente-elo-duplo-5mm-70cm', name: 'Corrente Elo Duplo', audience: 'masculino', type: 'correntes', detail: '5 mm · 70 cm', price: 499, image: '', featured: true },
