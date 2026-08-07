@@ -319,7 +319,7 @@ html{-webkit-tap-highlight-color:transparent}
 <button class="dlink" onClick="{{ goFeminino }}">Feminino<span class="dnum">03</span></button>
 <button class="dlink" onClick="{{ goAliancas }}">Alianças<span class="dnum">04</span></button>
 <button class="dlink" onClick="{{ goShop }}">Coleção<span class="dnum">05</span></button>
-<button class="dlink" onClick="{{ goTimes }}">Itens de times<span class="dnum">06</span></button>
+<button class="dlink" onClick="{{ goTimes }}">Joias de time<span class="dnum">06</span></button>
 <button class="dlink" onClick="{{ goManutencao }}">Manutenção<span class="dnum">07</span></button>
 <button class="dlink" onClick="{{ goContato }}">Atendimento<span class="dnum">08</span></button>
 <a class="btn" href="{{ waMain }}" target="_blank" style="margin-top:auto"><span class="wadot"></span>Chamar no WhatsApp</a>
@@ -421,7 +421,7 @@ html{-webkit-tap-highlight-color:transparent}
 </div></div>
 <div class="footerbase"><div class="wrap">
 <div class="fgrid">
-<div><div class="fh">Navegação</div><button class="flink" onClick="{{ goShop }}">Coleção completa</button><button class="flink" onClick="{{ goTimes }}">Itens de times</button><button class="flink" onClick="{{ goManutencao }}">Manutenção</button><button class="flink" onClick="{{ goAliancas }}">Alianças</button></div>
+<div><div class="fh">Navegação</div><button class="flink" onClick="{{ goShop }}">Coleção completa</button><button class="flink" onClick="{{ goTimes }}">Joias de time</button><button class="flink" onClick="{{ goManutencao }}">Manutenção</button><button class="flink" onClick="{{ goAliancas }}">Alianças</button></div>
 <div><div class="fh">Atendimento</div><button class="flink" onClick="{{ goContato }}">Falar com a FPC</button><div class="fs13" style="line-height:2;margin-top:7px">Garantia vitalícia<br>Rua VC-1, 519<br>Nova Contagem — MG</div></div>
 <div><div class="fh">Redes sociais</div><a class="flink" href="https://www.instagram.com/fpc_pratas/" target="_blank">Instagram · @fpc_pratas</a><a class="flink" href="https://www.facebook.com/299398896598348" target="_blank">Facebook · FPC Pratas</a><a class="flink" href="{{ waMain }}" target="_blank">WhatsApp</a></div>
 </div>
@@ -486,7 +486,7 @@ class Component extends DCLogic {
       goHome:()=>this.go('home'),goShop:()=>this.go('shop'),goContato:()=>this.go('contato'),
       goMasculino:()=>this.goAudience('masculino'),goFeminino:()=>this.goAudience('feminino'),
       goAliancas:()=>this.setState({route:'contato',menuOpen:false,ctMsg:'Olá! Quero informações sobre alianças em prata 925.'}),
-      goTimes:()=>this.setState({route:'contato',menuOpen:false,ctMsg:'Olá! Quero informações sobre itens de times em prata 925.'}),
+      goTimes:()=>this.setState({route:'contato',menuOpen:false,ctMsg:'Olá! Quero informações sobre joias de time em prata 925.'}),
       goManutencao:()=>this.setState({route:'contato',menuOpen:false,ctMsg:'Olá! Quero informações sobre manutenção de peças em prata 925.'}),
       footCls:'foot grain',
       ringPanels:[...'FPC PRATAS · PRATA 925 · FEITA À MÃO · '].map((ch,i,arr)=>{const a=(i*360/arr.length).toFixed(2);return{ch:ch===' '?'\u00a0':ch,t:'rotateY('+a+'deg) translateZ(150px)',ti:'rotateY('+a+'deg) translateZ(147px) rotateY(180deg)'};}),
