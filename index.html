@@ -156,6 +156,8 @@
 .gth:hover{border-color:var(--gold)}
 .pdprice{font-family:'Playfair Display',serif;font-size:30px;font-weight:600;color:#141310;margin:16px 0 4px}
 .pdprice-x{color:var(--gold)}
+.pdopts{margin-top:18px;padding:15px 16px;border:1px solid #e5e1d8;background:#f8f6f1}
+.pdopttext{font:500 11px/1.75 'IBM Plex Mono',monospace;color:#4d4a44;margin-top:7px}
 .srow{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid #e8e4da;font-size:13.5px}
 .slab{color:#6d685e}
 .sval{font-family:'IBM Plex Mono',monospace;font-size:12.5px}
@@ -362,7 +364,7 @@ html{-webkit-tap-highlight-color:transparent}
 <div class="crumb"><button class="clink" onClick="{{ goHome }}">Início</button> / <button class="clink" onClick="{{ goShop }}">Coleção</button> / {{ p.name }}</div>
 <div class="pdlay">
 <div><div class="gmain ph phx"><sc-if value="{{ p.img }}" hint-placeholder-val="{{ false }}"><span class="pph" role="img" aria-label="{{ p.name }}" style="background-image:{{ p.imgBg }}"></span></sc-if><span class="phl">Foto principal</span></div>
-<div class="gthumbs"><div class="gth ph phx"><sc-if value="{{ p.detailImg }}" hint-placeholder-val="{{ false }}"><span class="pph" role="img" aria-label="Detalhe de {{ p.name }}" style="background-image:{{ p.detailImgBg }}"></span></sc-if><span class="phl">Foto de detalhe</span></div></div></div>
+<sc-if value="{{ p.hasDetail }}" hint-placeholder-val="{{ false }}"><div class="gthumbs"><div class="gth ph phx"><span class="pph" role="img" aria-label="Detalhe de {{ p.name }}" style="background-image:{{ p.detailImgBg }}"></span><span class="phl">Foto de detalhe</span></div></div></sc-if></div>
 <div>
 <div class="kick">{{ p.catLabel }}</div>
 <h1 class="serif" style="font-size:34px;font-weight:700;margin:10px 0 0;letter-spacing:-.01em">{{ p.name }}</h1>
@@ -372,6 +374,7 @@ html{-webkit-tap-highlight-color:transparent}
 <div class="srow"><span class="slab">Modelo</span><span class="sval">{{ p.wFmt }}</span></div>
 <div class="srow"><span class="slab">Categoria</span><span class="sval">{{ p.finLabel }}</span></div>
 </div>
+<sc-if value="{{ p.hasOptions }}" hint-placeholder-val="{{ false }}"><div class="pdopts"><div class="flab">Tamanhos e valores</div><div class="pdopttext">{{ p.options }}</div></div></sc-if>
 <a class="btn w100 bbox" href="{{ waProduct }}" target="_blank" style="margin-top:26px"><span class="wadot"></span>Consultar esta peça no WhatsApp</a>
 <div class="cbox" style="margin-top:22px"><div class="cboxh"><span class="sigdia"></span>Garantia FPC</div><p class="fs14 mut2" style="line-height:1.7;margin:0">Garantia vitalícia da autenticidade da cor prata.</p></div>
 <div style="margin-top:20px"><div class="flab">Cuidados</div><p class="fs14 mut2" style="line-height:1.7;margin:0">Guarde em local seco, evite contato com perfume e cloro. O escurecimento natural da prata sai com flanela de polimento — ou solicite nosso serviço de polimento.</p></div>
@@ -457,7 +460,7 @@ class Component extends DCLogic {
   applyAccent(){ document.body.style.setProperty('--gold',this.props.corAccent ?? '#a47864'); }
   enrich(p){
     const item=p||{};
-    return {...item,img:item.image||null,imgBg:item.image?'url("'+item.image+'")':null,detailImg:item.detailImage||null,detailImgBg:item.detailImage?'url("'+item.detailImage+'")':null,priceFmt:this.fmt(item),wFmt:item.detail||'Modelo disponível',finLabel:this.AUDIENCES[item.audience]||'Joias',catLabel:this.TYPES[item.type]||'Joias',phLabel:'Foto em breve',badge:item.audience==='personalizados',material:'Prata 925',open:()=>this.go('product',item.id)};
+    return {...item,img:item.image||null,imgBg:item.image?'url("'+item.image+'")':null,detailImg:item.detailImage||null,detailImgBg:item.detailImage?'url("'+item.detailImage+'")':null,hasDetail:!!item.detailImage,hasOptions:!!item.options,priceFmt:this.fmt(item),wFmt:item.detail||'Modelo disponível',finLabel:this.AUDIENCES[item.audience]||'Joias',catLabel:this.TYPES[item.type]||'Joias',phLabel:'Foto em breve',badge:item.audience==='personalizados',material:'Prata 925',open:()=>this.go('product',item.id)};
   }
   renderVals(){
     const s=this.state;
