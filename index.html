@@ -103,7 +103,8 @@
 .gendergo{display:flex;align-items:center;gap:12px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
 .gendergo::after{content:'→';font-size:17px;transition:transform .25s ease}
 .gendercard:hover .gendergo::after,.gendercard:focus-visible .gendergo::after{transform:translateX(6px)}
-.pcard{background:#fff;border:1px solid #e5e1d8;transition:all .3s ease;cursor:pointer;position:relative;overflow:hidden;text-align:left;padding:0;font-family:'Inter',sans-serif}
+.pcard{background:#fff;border:1px solid #e5e1d8;color:#17181a;transition:all .3s ease;cursor:pointer;position:relative;overflow:hidden;text-align:left;padding:0;font-family:'Inter',sans-serif;-webkit-appearance:none;appearance:none}
+.pcard .pname,.pcard .pprice{color:#17181a}
 .pcard:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(20,17,8,.13);border-color:rgba(164,120,100,.55)}
 .pimg{aspect-ratio:1;position:relative}
 .pbadge{position:absolute;top:12px;left:12px;background:#141310;color:#c8cdd4;font:500 9.5px 'IBM Plex Mono',monospace;letter-spacing:.14em;padding:6px 9px;text-transform:uppercase;z-index:2}
@@ -312,7 +313,7 @@ html{-webkit-tap-highlight-color:transparent}
 <h1 class="h1 au d1">Joias em <em class="shine">prata 925</em>,<br>masculinas e femininas.</h1>
 <p class="lead au d2">Trabalhamos com joias masculinas e femininas, fazemos manutenção de peças e fabricamos alianças de prata.</p>
 <div class="fx ac gap16 ctarow au d3"><button class="btn" onClick="{{ goMasculino }}">Ver masculino</button><button class="btn2" onClick="{{ goFeminino }}">Ver feminino</button></div>
-<div class="fx gap24 au d4" style="margin-top:44px;flex-wrap:wrap"><div class="stat"><div class="statv">925</div><div class="statl">Prata legítima</div></div><div class="stat"><div class="statv">Vitalícia</div><div class="statl">Garantia da cor prata</div></div><div class="stat"><div class="statv">Oficina</div><div class="statl">Manutenção e alianças</div></div></div></div>
+<div class="fx gap24 au d4" style="margin-top:44px;flex-wrap:wrap"><div class="stat"><div class="statv">925</div><div class="statl">Prata legítima</div></div><div class="stat"><div class="statv">Vitalícia</div><div class="statl">Garantia da cor prata</div></div></div></div>
 <div class="au d2 scene"><span class="pedestal"></span><div class="monu floaty"><img class="mlogo" src="assets/logo-fpc.png" alt="FPC Pratas"></div></div>
 </div><div class="scue"><span class="scline"></span></div></section>
 <div class="mq" aria-hidden="true"><div class="mqin"><span class="mqi">Prata 925 legítima<i class="sigdia"></i>Joias masculinas<i class="sigdia"></i>Joias femininas<i class="sigdia"></i>Manutenção e polimento<i class="sigdia"></i>Alianças de prata<i class="sigdia"></i>Garantia vitalícia<i class="sigdia"></i></span><span class="mqi">Prata 925 legítima<i class="sigdia"></i>Joias masculinas<i class="sigdia"></i>Joias femininas<i class="sigdia"></i>Manutenção e polimento<i class="sigdia"></i>Alianças de prata<i class="sigdia"></i>Garantia vitalícia<i class="sigdia"></i></span></div></div>
