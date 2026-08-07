@@ -80,6 +80,7 @@
 .phd .phl{background:rgba(10,11,13,.7);color:#b8bec6}
 .heropic{aspect-ratio:4/4.6;border:1px solid rgba(190,197,205,.3);outline:1px solid rgba(190,197,205,.3);outline-offset:10px}
 .sec{padding:clamp(56px,9vw,104px) 0 0}
+.home-products{padding-top:clamp(42px,6vw,72px)}
 .shead{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:40px}
 .pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
 .pgrid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
@@ -127,12 +128,16 @@
 .quote{background:#fff;border:1px solid #dfe3e7;padding:48px 28px 30px;position:relative}
 .quott{font-family:'Playfair Display',serif;font-style:italic;font-size:16.5px;line-height:1.6;margin:0 0 22px}
 .avat{width:40px;height:40px;border-radius:50%;background:#141310;color:var(--gold);display:flex;align-items:center;justify-content:center;font:600 12px 'IBM Plex Mono',monospace;flex:none}
-.foot{background:#0b0c0e;color:#a8a59c;padding-top:40px;margin-top:96px}
-.footerbrand{overflow:hidden;margin:-40px 0 44px;padding:72px 0 64px;background:#101216;color:#eceff2;border-bottom:1px solid rgba(190,197,205,.16);background-image:radial-gradient(620px 320px at 78% 12%,rgba(214,219,226,.11),transparent 65%),linear-gradient(115deg,transparent 49.85%,rgba(220,224,230,.08) 49.85%,rgba(220,224,230,.08) 50.15%,transparent 50.15%)}
+.foot{background:#101216;color:#a8a59c;padding:0;margin-top:96px;overflow:hidden;background-image:radial-gradient(820px 430px at 80% 4%,rgba(214,219,226,.11),transparent 64%),linear-gradient(115deg,transparent 49.85%,rgba(220,224,230,.08) 49.85%,rgba(220,224,230,.08) 50.15%,transparent 50.15%),linear-gradient(65deg,transparent 72%,rgba(255,255,255,.035) 72%,rgba(255,255,255,.035) 72.15%,transparent 72.15%)}
+.footerghost{position:absolute;left:-2%;top:40px;font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(150px,23vw,330px);line-height:.8;color:transparent;-webkit-text-stroke:1px rgba(201,206,212,.1);pointer-events:none;user-select:none}
+.footerbrand{position:relative;padding:88px 0 78px;color:#eceff2}
 .footerbrandin{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:64px}
 .footerheadline{font-family:'Playfair Display',serif;font-size:clamp(34px,5vw,58px);font-weight:700;line-height:1.04;letter-spacing:-.02em;margin:20px 0 18px;text-wrap:balance}
 .footercopy{max-width:48ch;margin:0;color:#bcc2c9;font-size:14px;line-height:1.75}
-.footerlogo{justify-self:center;width:min(270px,72vw);height:auto;filter:drop-shadow(0 18px 40px rgba(0,0,0,.5))}
+.footerstats{display:flex;gap:24px;flex-wrap:wrap;margin-top:40px}
+.footerart{position:relative;display:flex;align-items:center;justify-content:center;min-height:360px}
+.footerlogo{position:relative;width:min(320px,72vw);height:auto;filter:drop-shadow(0 18px 40px rgba(0,0,0,.5));z-index:1}
+.footerbase{position:relative;border-top:1px solid rgba(255,255,255,.08);background:rgba(7,8,10,.46);padding-top:38px}
 .fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:38px;padding-bottom:36px}
 .fh{font:600 11px 'Inter',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#eceae4;margin-bottom:18px}
 .flink{display:block;color:#a8a59c;text-decoration:none;font-size:13.5px;padding:5px 0;cursor:pointer;background:none;border:0;text-align:left;font-family:'Inter',sans-serif;transition:color .2s}
@@ -295,11 +300,11 @@ html{-webkit-tap-highlight-color:transparent}
 .sclr:hover{color:#141310}
 @media(min-width:901px){.heroin{min-height:540px}}
 @media (prefers-reduced-motion: reduce){.au,.rv,.floaty,.orb,.shine,.page,.okmark,.wafab::before,.mqin,.scline,.heropic::after,.ghost,.ringspin,.ringwrap{animation:none!important;translate:none!important}}
-@media(max-width:900px){.heroin{grid-template-columns:1fr;gap:40px;padding-top:52px;padding-bottom:60px}.pgrid{grid-template-columns:repeat(2,1fr)}.pgc3{grid-template-columns:repeat(2,1fr)}.pgrid3{grid-template-columns:1fr}.shoplay,.lay2,.lay3{grid-template-columns:1fr}.fside{position:static}.sumcard{position:static}.pdlay{grid-template-columns:1fr;gap:40px}.fgrid{grid-template-columns:1fr 1fr;gap:36px}.footerbrandin{grid-template-columns:1fr;gap:34px}.footerlogo{justify-self:start;width:210px}.difgrid{grid-template-columns:1fr 1fr;gap:22px}.chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}.chip{flex:none}.scue{display:none}.cartrow{grid-template-columns:64px 1fr 30px;grid-template-areas:'img info x' 'img qty price';row-gap:10px;gap:14px}.cr-img{grid-area:img;width:64px;height:64px}.cr-info{grid-area:info}.cr-qty{grid-area:qty}.cr-price{grid-area:price;text-align:right}.cr-x{grid-area:x}.gendersec{padding-top:72px}.genderhead{align-items:start;flex-direction:column;gap:14px}.gendercard{min-height:310px;padding:30px}.gendernum{left:30px;top:28px}}
+@media(max-width:900px){.heroin{grid-template-columns:1fr;gap:40px;padding-top:52px;padding-bottom:60px}.pgrid{grid-template-columns:repeat(2,1fr)}.pgc3{grid-template-columns:repeat(2,1fr)}.pgrid3{grid-template-columns:1fr}.shoplay,.lay2,.lay3{grid-template-columns:1fr}.fside{position:static}.sumcard{position:static}.pdlay{grid-template-columns:1fr;gap:40px}.fgrid{grid-template-columns:1fr 1fr;gap:36px}.footerbrandin{grid-template-columns:1fr;gap:22px}.footerart{min-height:260px;justify-content:flex-start}.footerlogo{width:230px}.difgrid{grid-template-columns:1fr 1fr;gap:22px}.chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}.chip{flex:none}.scue{display:none}.cartrow{grid-template-columns:64px 1fr 30px;grid-template-areas:'img info x' 'img qty price';row-gap:10px;gap:14px}.cr-img{grid-area:img;width:64px;height:64px}.cr-info{grid-area:info}.cr-qty{grid-area:qty}.cr-price{grid-area:price;text-align:right}.cr-x{grid-area:x}.gendersec{padding-top:72px}.genderhead{align-items:start;flex-direction:column;gap:14px}.gendercard{min-height:310px;padding:30px}.gendernum{left:30px;top:28px}}
 @media(max-width:820px){.dnav{display:none}.burger{display:flex}.hwa{display:none}.hdrin{height:62px}.hero{margin-top:-62px;padding-top:62px}.hgrid{grid-template-columns:auto 1fr auto}.lgm{font-size:21px}.lgt{display:none}.hlogo{width:36px;height:36px}.hbtn{padding:9px 12px;font-size:10.5px}}
 @media(max-width:480px){.hbtn{display:none}.hgrid{gap:8px}.lgm{font-size:19px}}
 @media(max-width:400px){.wrap{padding:0 14px}.h1{font-size:32px}.mlogo{width:200px}}
-@media(max-width:640px){.topbar{font-size:8.5px;letter-spacing:.12em;padding:8px 10px}.heroin{padding-top:40px;padding-bottom:52px;gap:32px}.heropic{aspect-ratio:4/3}.orb{width:280px;height:280px;right:-60px;top:-80px}.ctarow{flex-direction:column;align-items:stretch}.stat{padding-left:12px}.statv{font-size:18px}.shead{flex-direction:column;align-items:flex-start;gap:10px;margin-bottom:26px}.pgrid{gap:12px}.pbody{padding:12px 13px 15px}.pname{font-size:14.5px}.pmeta{font-size:9.5px}.pprice{font-size:13.5px;margin-top:6px}.pbadge{font-size:8px;padding:4px 6px}.svc{padding:26px 22px}.foot{margin-top:64px}.footerbrand{margin:-40px 0 36px;padding:54px 0 48px}.footerbrandin{gap:28px}.footerlogo{width:170px}.footerheadline{font-size:36px}.fgrid{grid-template-columns:1fr;gap:22px;padding-bottom:28px}.fbot{flex-direction:column;gap:8px;align-items:flex-start}.wafab{left:16px;bottom:16px;padding:12px 18px;font-size:10.5px}.qbtn{width:44px;height:46px}.chip{padding:9px 13px}.page{padding:36px 0 0}.crumb{margin-bottom:18px}.frow{grid-template-columns:1fr}.atcrow .btn{width:100%}.gthumbs{grid-template-columns:minmax(0,120px);gap:8px}.pdprice{font-size:26px}.okmark{width:56px;height:56px}.atcbar{display:flex}.pdlay{padding-bottom:84px}.ghost{font-size:150px;bottom:-4%}.mqi{gap:30px;padding-right:30px}.scene{min-height:auto;padding:6px 0 30px}.gendersec{padding:58px 0 8px}.gendergrid{grid-template-columns:1fr;gap:14px}.gendercard{min-height:270px;padding:26px}.gendercard::before{font-size:240px;top:-34px}.gendernum{left:26px;top:24px}.gendername{font-size:40px}.genderdesc{font-size:13px;margin-bottom:22px}}
+@media(max-width:640px){.topbar{font-size:8.5px;letter-spacing:.12em;padding:8px 10px}.heroin{padding-top:40px;padding-bottom:52px;gap:32px}.heropic{aspect-ratio:4/3}.orb{width:280px;height:280px;right:-60px;top:-80px}.ctarow{flex-direction:column;align-items:stretch}.stat{padding-left:12px}.statv{font-size:18px}.shead{flex-direction:column;align-items:flex-start;gap:10px;margin-bottom:26px}.pgrid{gap:12px}.pbody{padding:12px 13px 15px}.pname{font-size:14.5px}.pmeta{font-size:9.5px}.pprice{font-size:13.5px;margin-top:6px}.pbadge{font-size:8px;padding:4px 6px}.svc{padding:26px 22px}.foot{margin-top:64px}.footerbrand{padding:58px 0 42px}.footerbrandin{gap:16px}.footerheadline{font-size:36px}.footerstats{margin-top:32px;gap:18px}.footerart{min-height:240px;justify-content:center}.footerlogo{width:210px}.footerbase{padding-top:30px}.fgrid{grid-template-columns:1fr;gap:22px;padding-bottom:28px}.fbot{flex-direction:column;gap:8px;align-items:flex-start}.wafab{left:16px;bottom:16px;padding:12px 18px;font-size:10.5px}.qbtn{width:44px;height:46px}.chip{padding:9px 13px}.page{padding:36px 0 0}.crumb{margin-bottom:18px}.frow{grid-template-columns:1fr}.atcrow .btn{width:100%}.gthumbs{grid-template-columns:minmax(0,120px);gap:8px}.pdprice{font-size:26px}.okmark{width:56px;height:56px}.atcbar{display:flex}.pdlay{padding-bottom:84px}.ghost{font-size:150px;bottom:-4%}.mqi{gap:30px;padding-right:30px}.scene{min-height:auto;padding:6px 0 30px}.gendersec{padding:58px 0 8px}.gendergrid{grid-template-columns:1fr;gap:14px}.gendercard{min-height:270px;padding:26px}.gendercard::before{font-size:240px;top:-34px}.gendernum{left:26px;top:24px}.gendername{font-size:40px}.genderdesc{font-size:13px;margin-bottom:22px}}
 </style>
 </helmet>
 <div class="{{ hdrCls }}"><div class="wrap hdrin hgrid">
@@ -320,23 +325,8 @@ html{-webkit-tap-highlight-color:transparent}
 <a class="btn" href="{{ waMain }}" target="_blank" style="margin-top:auto"><span class="wadot"></span>Chamar no WhatsApp</a>
 <div class="dnum" style="margin-top:16px">@FPC_PRATAS · NOVA CONTAGEM — MG</div></aside>
 <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
-<section class="hero grain"><span class="orb"></span><span class="ghost">925</span>
 <div class="mq mqhero" aria-hidden="true"><div class="mqin"><span class="mqi">Prata 925 legítima<i class="sigdia"></i>Joias masculinas<i class="sigdia"></i>Joias femininas<i class="sigdia"></i>Manutenção e polimento<i class="sigdia"></i>Alianças de prata<i class="sigdia"></i>Garantia vitalícia<i class="sigdia"></i></span><span class="mqi">Prata 925 legítima<i class="sigdia"></i>Joias masculinas<i class="sigdia"></i>Joias femininas<i class="sigdia"></i>Manutenção e polimento<i class="sigdia"></i>Alianças de prata<i class="sigdia"></i>Garantia vitalícia<i class="sigdia"></i></span></div></div>
-<div class="wrap heroin">
-<div><div class="sig au"><span class="sigline"></span><span class="sigdia"></span><span class="kick">Fábrica de prata 925</span></div>
-<h1 class="h1 au d1">Referência em <span class="hero-word">joias</span><br>De prata</h1>
-<p class="lead au d2">Trabalhamos com joias masculinas e femininas, fazemos manutenção de peças e fabricamos alianças de prata.</p>
-<div class="fx ac gap16 ctarow au d3"><button class="btn" onClick="{{ goMasculino }}">Ver masculino</button><button class="btn2" onClick="{{ goFeminino }}">Ver feminino</button></div>
-<div class="fx gap24 au d4" style="margin-top:44px;flex-wrap:wrap"><div class="stat"><div class="statv">925</div><div class="statl">Prata legítima</div></div><div class="stat"><div class="statv">Vitalícia</div><div class="statl">Garantia da cor prata</div></div></div></div>
-<div class="au d2 scene"><span class="pedestal"></span><div class="monu floaty"><img class="mlogo" src="assets/logo-fpc.png" alt="FPC Pratas"></div></div>
-</div><div class="scue"><span class="scline"></span></div></section>
-<section class="gendersec"><div class="wrap rv">
-<div class="genderhead"><div><div class="sig"><span class="sigline"></span><span class="sigdia"></span><span class="kick">Escolha sua coleção</span></div><h2 class="h2 m0" style="margin-bottom:0">Prata para cada estilo.</h2></div><p class="gendercopy">Encontre correntes, anéis, pingentes, pulseiras e outras peças organizadas para facilitar sua escolha.</p></div>
-<div class="gendergrid">
-<button class="gendercard genderm" data-letter="M" onClick="{{ goMasculino }}" aria-label="Ver coleção masculina"><span class="gendernum">01 · MASCULINO</span><h3 class="gendername">Masculino</h3><p class="genderdesc">Correntes, conjuntos, anéis, pingentes e pulseiras em prata 925.</p><span class="gendergo">Explorar coleção</span></button>
-<button class="gendercard genderf" data-letter="F" onClick="{{ goFeminino }}" aria-label="Ver coleção feminina"><span class="gendernum">02 · FEMININO</span><h3 class="gendername">Feminino</h3><p class="genderdesc">Anéis, colares, brincos, pulseiras, conjuntos e piercings em prata 925.</p><span class="gendergo">Explorar coleção</span></button>
-</div></div></section>
-<section class="sec"><div class="wrap rv">
+<section class="sec home-products"><div class="wrap rv">
 <div class="shead"><div><div class="sig"><span class="sigline"></span><span class="sigdia"></span><span class="kick">Coleção</span></div><h2 class="h2 m0" style="margin-bottom:0">Peças em destaque</h2></div><button class="tlink" onClick="{{ goShop }}">Ver toda a coleção</button></div>
 <div class="pgrid stag"><sc-for list="{{ featured }}" as="p" hint-placeholder-count="4">
 <button class="pcard" onClick="{{ p.open }}"><div class="pimg ph phx"><sc-if value="{{ p.img }}" hint-placeholder-val="{{ false }}"><span class="pph" role="img" aria-label="{{ p.name }}" style="background-image:{{ p.imgBg }}"></span></sc-if><sc-if value="{{ p.badge }}" hint-placeholder-val="{{ false }}"><span class="pbadge">Personalizável</span></sc-if><span class="phl">{{ p.phLabel }}</span></div><div class="pbody"><div class="pname">{{ p.name }}</div><div class="pmeta">{{ p.wFmt }} · {{ p.finLabel }}</div><div class="pprice">{{ p.priceFmt }}</div></div></button>
@@ -424,18 +414,19 @@ html{-webkit-tap-highlight-color:transparent}
 </div></div></section>
 </sc-if>
 <footer class="{{ footCls }}">
-<div class="footerbrand grain"><div class="wrap footerbrandin">
-<div><div class="sig"><span class="sigline"></span><span class="sigdia"></span><span class="kick" style="color:#d7dce1">Fábrica de prata 925</span></div><div class="footerheadline">Referência em <span class="hero-word">joias</span><br>De prata</div><p class="footercopy">Trabalhamos com joias masculinas e femininas, fazemos manutenção de peças e fabricamos alianças de prata.</p></div>
-<img class="footerlogo" src="assets/logo-fpc.png" alt="FPC Pratas">
+<span class="footerghost">925</span>
+<div class="footerbrand"><div class="wrap footerbrandin">
+<div><div class="sig"><span class="sigline"></span><span class="sigdia"></span><span class="kick" style="color:#d7dce1">Fábrica de prata 925</span></div><div class="footerheadline">Referência em <span class="hero-word">joias</span><br>De prata</div><p class="footercopy">Trabalhamos com joias masculinas e femininas, fazemos manutenção de peças e fabricamos alianças de prata.</p><div class="footerstats"><div class="stat"><div class="statv">925</div><div class="statl">Prata legítima</div></div><div class="stat"><div class="statv">Vitalícia</div><div class="statl">Garantia da cor prata</div></div></div></div>
+<div class="footerart"><span class="pedestal"></span><img class="footerlogo" src="assets/logo-fpc.png" alt="FPC Pratas"></div>
 </div></div>
-<div class="wrap">
+<div class="footerbase"><div class="wrap">
 <div class="fgrid">
-<div><div class="fh">Navegação</div><button class="flink" onClick="{{ goMasculino }}">Masculino</button><button class="flink" onClick="{{ goFeminino }}">Feminino</button><button class="flink" onClick="{{ goAliancas }}">Alianças</button><button class="flink" onClick="{{ goShop }}">Coleção completa</button><button class="flink" onClick="{{ goTimes }}">Itens de times</button><button class="flink" onClick="{{ goManutencao }}">Manutenção</button></div>
-<div><div class="fh">Atendimento</div><div class="fs13" style="line-height:2">Garantia vitalícia<br>Rua VC-1, 519<br>Nova Contagem — MG</div></div>
-<div><div class="fh">Redes</div><a class="flink" href="https://www.instagram.com/fpc_pratas/" target="_blank">Instagram</a><a class="flink" href="https://www.facebook.com/299398896598348" target="_blank">Facebook</a><a class="flink" href="{{ waMain }}" target="_blank">WhatsApp</a></div>
+<div><div class="fh">Navegação</div><button class="flink" onClick="{{ goShop }}">Coleção completa</button><button class="flink" onClick="{{ goTimes }}">Itens de times</button><button class="flink" onClick="{{ goManutencao }}">Manutenção</button><button class="flink" onClick="{{ goAliancas }}">Alianças</button></div>
+<div><div class="fh">Atendimento</div><button class="flink" onClick="{{ goContato }}">Falar com a FPC</button><div class="fs13" style="line-height:2;margin-top:7px">Garantia vitalícia<br>Rua VC-1, 519<br>Nova Contagem — MG</div></div>
+<div><div class="fh">Redes sociais</div><a class="flink" href="https://www.instagram.com/fpc_pratas/" target="_blank">Instagram · @fpc_pratas</a><a class="flink" href="https://www.facebook.com/299398896598348" target="_blank">Facebook · FPC Pratas</a><a class="flink" href="{{ waMain }}" target="_blank">WhatsApp</a></div>
 </div>
 <div class="fbot"><span>© 2026 FPC Pratas · Nova Contagem, MG</span></div>
-</div></footer>
+</div></div></footer>
 <sc-if value="{{ showFab }}" hint-placeholder-val="{{ false }}"><a class="wafab" href="{{ waMain }}" target="_blank"><span class="wadot"></span>WhatsApp</a></sc-if>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900},&quot;corAccent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#c2c8cf&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#c2c8cf&quot;,&quot;#aeb5bd&quot;,&quot;#dce1e6&quot;],&quot;section&quot;:&quot;Aparência&quot;},&quot;botaoWhatsApp&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Loja&quot;}}">
@@ -486,7 +477,7 @@ class Component extends DCLogic {
     const productMessage='Olá! Tenho interesse na peça '+(cur.name||'do catálogo')+(cur.detail?' ('+cur.detail+')':'')+'. Pode me ajudar?';
     return {
       isHome:s.route==='home',isShop:s.route==='shop',isProduct:s.route==='product',isContato:s.route==='contato',
-      hdrCls:(s.route==='home'&&!s.scrolled)?'hdr':'hdr lite',
+      hdrCls:'hdr lite',
       q:s.q,hasQ:s.q.length>0,onQ:e=>this.setState({q:e.target.value}),clearQ:()=>this.setState({q:''}),
       navHomeCls:s.route==='home'?'nlink non':'nlink',
       navMasculinoCls:((s.route==='shop'&&s.audience==='masculino')||(s.route==='product'&&cur.audience==='masculino'))?'nlink non':'nlink',
