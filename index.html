@@ -86,7 +86,7 @@
 .pgrid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .gendersec{padding:92px 0 24px}
 .genderhead{display:flex;align-items:end;justify-content:space-between;gap:32px;margin-bottom:30px}
-.gendercopy{max-width:42ch;margin:0;color:#656c74;font-size:14px;line-height:1.7}
+.gendercopy{max-width:42ch;margin:0;color:#b8c0c8;font-size:14px;line-height:1.7}
 .gendergrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
 .gendercard{position:relative;isolation:isolate;width:100%;min-height:350px;padding:38px;border:1px solid rgba(190,197,205,.35);overflow:hidden;text-align:left;cursor:pointer;display:flex;flex-direction:column;justify-content:flex-end;font-family:'Inter',sans-serif;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
 .gendercard::before{content:attr(data-letter);position:absolute;z-index:-1;right:-8px;top:-54px;font-family:'Playfair Display',serif;font-size:300px;font-weight:600;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(214,219,226,.16);transition:transform .5s ease,-webkit-text-stroke-color .35s ease}
@@ -326,10 +326,12 @@ html{-webkit-tap-highlight-color:transparent}
 <button class="dlink" onClick="{{ goMasculino }}">Masculino<span class="dnum">02</span></button>
 <button class="dlink" onClick="{{ goFeminino }}">Feminino<span class="dnum">03</span></button>
 <button class="dlink" onClick="{{ goAliancas }}">Alianças<span class="dnum">04</span></button>
-<button class="dlink" onClick="{{ goShop }}">Coleção<span class="dnum">05</span></button>
-<button class="dlink" onClick="{{ goTimes }}">Joias de time<span class="dnum">06</span></button>
-<button class="dlink" onClick="{{ goManutencao }}">Manutenção<span class="dnum">07</span></button>
-<button class="dlink" onClick="{{ goContato }}">Atendimento<span class="dnum">08</span></button>
+<button class="dlink" onClick="{{ goPersonalizados }}">Personalizadas<span class="dnum">05</span></button>
+<button class="dlink" onClick="{{ goInfantis }}">Infantis<span class="dnum">06</span></button>
+<button class="dlink" onClick="{{ goShop }}">Coleção<span class="dnum">07</span></button>
+<button class="dlink" onClick="{{ goTimes }}">Joias de time<span class="dnum">08</span></button>
+<button class="dlink" onClick="{{ goManutencao }}">Manutenção<span class="dnum">09</span></button>
+<button class="dlink" onClick="{{ goContato }}">Atendimento<span class="dnum">10</span></button>
 <a class="btn" href="{{ waMain }}" target="_blank" style="margin-top:auto"><span class="wadot"></span>Chamar no WhatsApp</a>
 <div class="dnum" style="margin-top:16px">@FPC_PRATAS · NOVA CONTAGEM — MG</div></aside>
 <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
@@ -340,6 +342,12 @@ html{-webkit-tap-highlight-color:transparent}
 <button class="pcard" onClick="{{ p.open }}"><div class="pimg ph phx"><sc-if value="{{ p.img }}" hint-placeholder-val="{{ false }}"><span class="pph" role="img" aria-label="{{ p.name }}" style="background-image:{{ p.imgBg }}"></span></sc-if><sc-if value="{{ p.badge }}" hint-placeholder-val="{{ false }}"><span class="pbadge">Personalizável</span></sc-if><span class="phl">{{ p.phLabel }}</span></div><div class="pbody"><div class="pname">{{ p.name }}</div><div class="pmeta">{{ p.wFmt }} · {{ p.finLabel }}</div><div class="pprice">{{ p.priceFmt }}</div></div></button>
 </sc-for></div>
 </div></section>
+<section class="gendersec"><div class="wrap rv">
+<div class="genderhead"><div><div class="sig"><span class="sigline"></span><span class="sigdia"></span><span class="kick">Coleções especiais</span></div><h2 class="h2 m0" style="margin-bottom:0">Uma joia para cada história</h2></div><p class="gendercopy">Peças feitas para celebrar momentos únicos, com opções personalizadas e modelos especiais para crianças.</p></div>
+<div class="gendergrid">
+<button class="gendercard genderm" data-letter="P" onClick="{{ goPersonalizados }}"><span class="gendernum">01 · SOB MEDIDA</span><h3 class="gendername">Joias<br>personalizadas</h3><p class="genderdesc">Transforme sua ideia em uma joia exclusiva, criada especialmente para você ou para presentear.</p><span class="gendergo">Solicitar orçamento</span></button>
+<button class="gendercard genderf" data-letter="I" onClick="{{ goInfantis }}"><span class="gendernum">02 · DELICADEZA</span><h3 class="gendername">Joias<br>infantis</h3><p class="genderdesc">Modelos delicados em prata 925 para celebrar os momentos especiais da infância.</p><span class="gendergo">Conhecer opções</span></button>
+</div></div></section>
 <section class="sec"><div class="wrap rv"><div class="difgrid">
 <div class="dif"><div class="difd"></div><div class="dift">Prata 925 legítima</div><p class="difp">Joias e acessórios produzidos em prata 925.</p></div>
 <div class="dif"><div class="difd"></div><div class="dift">Garantia vitalícia</div><p class="difp">Garantia vitalícia da autenticidade da cor das peças em prata 925.</p></div>
@@ -494,6 +502,8 @@ class Component extends DCLogic {
       goHome:()=>this.go('home'),goShop:()=>this.go('shop'),goContato:()=>this.go('contato'),
       goMasculino:()=>this.goAudience('masculino'),goFeminino:()=>this.goAudience('feminino'),
       goAliancas:()=>this.setState({route:'contato',menuOpen:false,ctMsg:'Olá! Quero informações sobre alianças em prata 925.'}),
+      goPersonalizados:()=>this.setState({route:'contato',menuOpen:false,sent:false,ctMsg:'Olá! Quero encomendar uma joia personalizada. Podemos conversar?'}),
+      goInfantis:()=>this.setState({route:'contato',menuOpen:false,sent:false,ctMsg:'Olá! Quero conhecer as opções de joias infantis em prata 925.'}),
       goTimes:()=>this.setState({route:'contato',menuOpen:false,ctMsg:'Olá! Quero informações sobre joias de time em prata 925.'}),
       goManutencao:()=>this.setState({route:'contato',menuOpen:false,ctMsg:'Olá! Quero informações sobre manutenção de peças em prata 925.'}),
       footCls:'foot grain',
