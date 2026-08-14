@@ -208,6 +208,9 @@
 .payd{font-size:12px;color:#69717a;margin-top:2px}
 .faqq{font-weight:600;font-size:14.5px;margin-bottom:6px}
 .faqa{font-size:13.5px;line-height:1.65;color:#b8c0c8;margin:0 0 22px}
+.carelist{padding-left:20px;margin:0}
+.carelist li{margin-bottom:10px}
+.carelist li:last-child{margin-bottom:0}
 .okmark{width:64px;height:64px;border:1px solid var(--gold);transform:rotate(45deg);display:flex;align-items:center;justify-content:center;margin:0 auto 28px}
 .okin{transform:rotate(-45deg);color:var(--gold);font-size:24px}
 .lay2{grid-template-columns:1fr 360px}
@@ -392,8 +395,8 @@ html{-webkit-tap-highlight-color:transparent}
 </div>
 <sc-if value="{{ p.hasOptions }}" hint-placeholder-val="{{ false }}"><div class="pdopts"><div class="flab">Tamanhos e valores</div><div class="pdopttext">{{ p.options }}</div></div></sc-if>
 <a class="btn w100 bbox" href="{{ waProduct }}" target="_blank" style="margin-top:26px"><span class="wadot"></span>Consultar esta peça no WhatsApp</a>
-<div class="cbox" style="margin-top:22px"><div class="cboxh"><span class="sigdia"></span>Garantia FPC</div><p class="fs14 mut2" style="line-height:1.7;margin:0">Garantia vitalícia da autenticidade da cor das peças em prata 925.</p></div>
-<div style="margin-top:20px"><div class="flab">Cuidados</div><p class="fs14 mut2" style="line-height:1.7;margin:0">Guarde em local seco, evite contato com perfume e cloro. O escurecimento natural da prata 925 sai com flanela de polimento — ou solicite nosso serviço de polimento.</p></div>
+<div class="cbox" style="margin-top:22px"><div class="cboxh"><span class="sigdia"></span>Garantia FPC</div><p class="fs14 mut2" style="line-height:1.7;margin:0">Garantia vitalícia da autenticidade da cor da prata da joia.</p><p class="fs14 mut2" style="line-height:1.7;margin:10px 0 0">Não cobrimos danos decorrentes de mau uso, como quebra de peças ou perda de pedras.</p></div>
+<div style="margin-top:20px"><div class="flab">Cuidados</div><ul class="carelist fs14 mut2" style="line-height:1.7"><li>Para casos mais avançados de oxidação (sujeira), leve a joia até a loja para um polimento profissional com máquina.</li><li>Lave sua joia diariamente após o uso para retirar o excesso de suor e poeira.</li><li>Em caso de oxidação (sujeira acumulada), utilize o limpa-pratas, produto específico para a limpeza de joias.</li><li>Tenha um porta-joias e guarde suas peças com cuidado.</li></ul></div>
 </div></div>
 <section class="sec" style="padding-top:80px"><div class="sig"><span class="sigline"></span><span class="sigdia"></span><span class="kick">Você também pode gostar</span></div>
 <div class="pgrid3" style="margin-top:28px"><sc-for list="{{ related }}" as="p" hint-placeholder-count="3">
@@ -423,7 +426,7 @@ html{-webkit-tap-highlight-color:transparent}
 </div></div>
 <div><div class="sumcard" style="position:static">
 <a class="btn w100 bbox" href="{{ waMain }}" target="_blank"><span class="wadot"></span>Chamar no WhatsApp</a>
-<div style="margin-top:26px"><div class="flab">Garantia</div><div class="fs14" style="line-height:1.8">Garantia vitalícia da autenticidade da cor das peças em prata 925.</div></div>
+<div style="margin-top:26px"><div class="flab">Garantia</div><div class="fs14" style="line-height:1.8">Garantia vitalícia da autenticidade da cor da prata da joia.<br>Não cobrimos danos decorrentes de mau uso, como quebra de peças ou perda de pedras.</div></div>
 <div style="margin-top:22px"><div class="flab">Onde estamos</div><div class="fs14" style="line-height:1.8">Rua VC-1, 519<br>Nova Contagem · Contagem — MG</div></div>
 <div style="margin-top:22px"><div class="flab">Redes</div><a class="flink" style="color:#45443f" href="https://www.instagram.com/fpc_pratas/" target="_blank">Instagram · @fpc_pratas</a><a class="flink" style="color:#45443f" href="https://www.facebook.com/299398896598348" target="_blank">Facebook · FPC Pratas</a></div>
 </div></div>
