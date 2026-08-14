@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>FPC Pratas — Painel administrativo</title>
+<link rel="icon" type="image/png" href="assets/logo-fpc.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111316;--paper:#f3f2ee;--white:#fff;--line:#dcd9d1;--muted:#6a6964;--silver:#c7cdd3;--ok:#19724b;--warn:#a65f16;--danger:#a83535}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}button,input,select,textarea{font:inherit}button{cursor:pointer}.hidden{display:none!important}
+.app{display:grid;grid-template-columns:238px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;background:#101216;color:#eef1f4;padding:24px 16px;display:flex;flex-direction:column}.brand{display:flex;align-items:center;gap:11px;padding:0 8px 24px;border-bottom:1px solid #292d32}.brand img{width:38px;height:38px;object-fit:contain}.brand strong{font:700 22px Playfair Display,serif}.brand small{font:500 9px IBM Plex Mono,monospace;letter-spacing:.24em;color:#aeb5bd}.nav{display:grid;gap:6px;margin-top:24px}.navbtn{border:0;background:transparent;color:#9ea5ad;text-align:left;padding:12px 14px;border-left:2px solid transparent}.navbtn:hover{color:#fff}.navbtn.on{color:#fff;background:#1b1f24;border-left-color:var(--silver)}.sidefoot{margin-top:auto;padding:18px 8px 0;border-top:1px solid #292d32;color:#818993;font:10px/1.7 IBM Plex Mono,monospace}.main{min-width:0;padding:0 34px 64px}.top{min-height:82px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px}.eyebrow{font:500 10px IBM Plex Mono,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}h1{font:700 clamp(25px,3vw,34px) Playfair Display,serif;margin:5px 0 0}.topactions{display:flex;align-items:center;gap:10px}.storelink{color:var(--ink);font-size:12px;font-weight:600;text-decoration:none;border-bottom:1px solid #7d858d;padding-bottom:2px}.logout{border:1px solid var(--line);background:#fff;padding:9px 12px}.content{padding-top:28px}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.stat{background:#fff;border:1px solid var(--line);border-top:2px solid #aeb5bd;padding:20px}.stat span{font:600 10px IBM Plex Mono,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.stat strong{display:block;font:700 31px Playfair Display,serif;margin-top:10px}.panel{background:#fff;border:1px solid var(--line);padding:22px;margin-top:20px}.panelhead,.toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}.panelhead h2{font:700 19px Playfair Display,serif;margin:0}.notice{margin-top:18px;padding:14px 16px;border-left:3px solid var(--silver);background:#eef0f1;font-size:13px;line-height:1.6;color:#41464b}.toolbar{margin-bottom:16px}.search{width:min(360px,100%);padding:11px 13px;border:1px solid var(--line);background:#fff}.btn{border:1px solid #111316;background:#111316;color:#fff;padding:11px 17px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}.btn:hover{background:#252a30}.btn.secondary{background:#fff;color:#111316;border-color:#bbb8b0}.btn.danger{background:#fff;color:var(--danger);border-color:#d8aaaa}.tablewrap{overflow:auto}.ptable{width:100%;border-collapse:collapse;min-width:850px}.ptable th{text-align:left;padding:11px 10px;border-bottom:1px solid var(--line);font:600 9px IBM Plex Mono,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}.ptable td{padding:12px 10px;border-bottom:1px solid #ebe9e3;font-size:13px;vertical-align:middle}.pthumb{width:48px;height:48px;object-fit:cover;border:1px solid var(--line);background:#e8e7e2}.pname{font-weight:600}.pid{font:10px IBM Plex Mono,monospace;color:var(--muted);margin-top:4px}.pill{display:inline-block;padding:5px 8px;border-radius:20px;background:#eef0f1;font:600 10px IBM Plex Mono,monospace}.actions{display:flex;gap:7px}.iconbtn{border:1px solid var(--line);background:#fff;padding:7px 9px;font-size:11px}.iconbtn:hover{border-color:#7d858d}.iconbtn.del:hover{color:var(--danger);border-color:#d8aaaa}.empty{text-align:center;padding:42px;color:var(--muted)}
+.login{position:fixed;inset:0;z-index:20;background:#101216;display:grid;place-items:center;padding:22px}.loginbox{width:min(420px,100%);background:#f6f5f1;border-top:3px solid var(--silver);padding:34px}.loginbrand{display:flex;align-items:center;gap:13px;margin-bottom:26px}.loginbrand img{width:48px;height:48px}.loginbrand h2{font:700 25px Playfair Display,serif;margin:0}.loginbrand p{margin:4px 0 0;color:var(--muted);font-size:12px}.label{display:block;font:600 10px IBM Plex Mono,monospace;letter-spacing:.13em;text-transform:uppercase;margin:0 0 7px}.field{width:100%;border:1px solid #ccc9c1;background:#fff;padding:12px 13px}.field:focus{outline:2px solid #aeb5bd;outline-offset:1px}.login .btn{width:100%;margin-top:14px}.error{color:var(--danger);font-size:12px;line-height:1.5;margin-top:12px}.status{position:fixed;right:18px;bottom:18px;z-index:30;max-width:390px;padding:13px 16px;background:#111316;color:#fff;box-shadow:0 14px 40px #0004;font-size:12px;line-height:1.5}.status.ok{background:#145c3e}.status.bad{background:#7f2929}
+dialog{width:min(760px,calc(100% - 28px));max-height:90vh;border:0;border-top:3px solid var(--silver);padding:0;background:#f8f7f3;box-shadow:0 30px 90px #0006}dialog::backdrop{background:#08090ba8;backdrop-filter:blur(3px)}.modalhead{display:flex;align-items:center;justify-content:space-between;padding:21px 24px;border-bottom:1px solid var(--line)}.modalhead h2{font:700 22px Playfair Display,serif;margin:0}.close{border:0;background:none;font-size:23px;color:var(--muted)}.formbody{padding:22px 24px;overflow:auto}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:15px}.formgroup{margin-bottom:15px}.check{display:flex;align-items:center;gap:9px;font-size:13px}.images{display:grid;grid-template-columns:1fr 1fr;gap:14px}.imagebox{border:1px dashed #aaa69d;background:#fff;padding:12px}.imagebox img{display:block;width:100%;aspect-ratio:1;object-fit:cover;background:#eceae4;margin-bottom:10px}.imagebox small{display:block;color:var(--muted);margin-top:6px;line-height:1.4}.modalfoot{display:flex;justify-content:space-between;gap:10px;padding:18px 24px;border-top:1px solid var(--line);background:#fff}.configlist{display:grid;gap:12px;margin-top:15px}.configitem{display:grid;grid-template-columns:190px 1fr;gap:20px;padding:12px 0;border-bottom:1px solid #ebe9e3;font-size:13px}.configitem code{font:11px IBM Plex Mono,monospace}.mono{font-family:IBM Plex Mono,monospace}
+@media(max-width:900px){.app{grid-template-columns:1fr}.sidebar{position:static;height:auto;padding:12px 14px;display:flex;flex-direction:row;align-items:center;gap:14px;overflow:auto}.brand{padding:0 14px 0 0;border:0;border-right:1px solid #292d32;flex:none}.brand img{width:32px;height:32px}.brand strong{font-size:18px}.brand small,.sidefoot{display:none}.nav{display:flex;margin:0;gap:4px}.navbtn{white-space:nowrap;border-left:0;border-bottom:2px solid transparent}.navbtn.on{border-bottom-color:var(--silver)}.main{padding:0 16px 48px}.top{min-height:72px}.stats{grid-template-columns:1fr 1fr}.grid2,.images{grid-template-columns:1fr}.configitem{grid-template-columns:1fr;gap:6px}}
+@media(max-width:520px){.stats{grid-template-columns:1fr}.topactions .storelink{display:none}.panel{padding:16px}.formbody,.modalhead,.modalfoot{padding-left:17px;padding-right:17px}.modalfoot{flex-wrap:wrap}.modalfoot .btn{flex:1}.brand small{display:none}}
+</style>
+</head>
+<body>
+<div id="login" class="login">
+  <form id="loginForm" class="loginbox">
+    <div class="loginbrand"><img src="assets/logo-fpc.png" alt=""><div><h2>FPC Pratas</h2><p>Painel administrativo</p></div></div>
+    <label class="label" for="password">Senha do painel</label>
+    <input id="password" class="field" type="password" autocomplete="current-password" required autofocus>
+    <button id="loginButton" class="btn" type="submit">Entrar</button>
+    <div id="loginError" class="error hidden"></div>
+  </form>
+</div>
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><img src="assets/logo-fpc.png" alt=""><div><strong>FPC</strong><br><small>PRATAS · ADMIN</small></div></div>
+    <nav class="nav"><button class="navbtn on" data-view="dashboard">Visão geral</button><button class="navbtn" data-view="products">Produtos</button><button class="navbtn" data-view="settings">Configuração</button></nav>
+    <div class="sidefoot">Catálogo conectado ao GitHub<br>Deploy automático pela Vercel</div>
+  </aside>
+  <main class="main">
+    <header class="top"><div><div class="eyebrow">FPC Pratas / <span id="crumb">Visão geral</span></div><h1 id="title">Painel administrativo</h1></div><div class="topactions"><a class="storelink" href="/" target="_blank">Ver site ↗</a><button id="logout" class="logout">Sair</button></div></header>
+
+    <section id="dashboard" class="content view">
+      <div class="stats"><div class="stat"><span>Produtos</span><strong id="statProducts">0</strong></div><div class="stat"><span>Em destaque</span><strong id="statFeatured">0</strong></div><div class="stat"><span>Categorias</span><strong id="statCategories">0</strong></div><div class="stat"><span>Sem preço</span><strong id="statNoPrice">0</strong></div></div>
+      <div class="panel"><div class="panelhead"><h2>Catálogo real</h2><button class="btn" data-go-products>Gerenciar produtos</button></div><div class="notice">Este painel altera o arquivo real do catálogo no GitHub. Depois de salvar, a Vercel inicia uma nova publicação automaticamente; a mudança normalmente aparece no site em poucos minutos.</div></div>
+    </section>
+
+    <section id="products" class="content view hidden">
+      <div class="toolbar"><input id="search" class="search" placeholder="Buscar produto…"><div><button id="export" class="btn secondary">Exportar JSON</button> <button id="addProduct" class="btn">+ Adicionar produto</button></div></div>
+      <div class="panel" style="margin-top:0;padding-top:10px"><div class="tablewrap"><table class="ptable"><thead><tr><th>Foto</th><th>Produto</th><th>Público</th><th>Tipo</th><th>Preço</th><th>Destaque</th><th>Ações</th></tr></thead><tbody id="productRows"></tbody></table><div id="empty" class="empty hidden">Nenhum produto encontrado.</div></div></div>
+    </section>
+
+    <section id="settings" class="content view hidden">
+      <div class="panel" style="margin-top:0"><div class="panelhead"><h2>Integração</h2><span class="pill">API ativa</span></div><div class="configlist"><div class="configitem"><strong>Catálogo</strong><code>catalogo.js</code></div><div class="configitem"><strong>Imagens</strong><code>assets/catalogo/</code></div><div class="configitem"><strong>Publicação</strong><span>GitHub → Vercel, automaticamente após cada alteração</span></div><div class="configitem"><strong>Segurança</strong><span>A senha e o token do GitHub ficam somente nas variáveis protegidas da Vercel.</span></div></div></div>
+    </section>
+  </main>
+</div>
+
+<dialog id="productDialog">
+  <form id="productForm">
+    <div class="modalhead"><h2 id="modalTitle">Adicionar produto</h2><button type="button" class="close" data-close aria-label="Fechar">×</button></div>
+    <div class="formbody">
+      <div class="grid2"><div class="formgroup"><label class="label" for="name">Nome</label><input id="name" class="field" required maxlength="120"></div><div class="formgroup"><label class="label" for="productId">Identificador</label><input id="productId" class="field mono" required pattern="[a-z0-9-]{2,80}" maxlength="80"></div></div>
+      <div class="grid2"><div class="formgroup"><label class="label" for="audience">Categoria</label><select id="audience" class="field"><option value="masculino">Masculino</option><option value="feminino">Feminino</option><option value="personalizados">Personalizados</option><option value="infantil">Infantil</option><option value="acessorios">Acessórios</option></select></div><div class="formgroup"><label class="label" for="type">Tipo de peça</label><select id="type" class="field"><option value="correntes">Correntes</option><option value="conjuntos">Conjuntos</option><option value="aneis">Anéis</option><option value="pingentes">Pingentes</option><option value="pulseiras">Pulseiras</option><option value="colares">Colares</option><option value="brincos">Brincos</option><option value="piercings">Piercings</option><option value="acessorios">Acessórios</option></select></div></div>
+      <div class="grid2"><div class="formgroup"><label class="label" for="detail">Detalhes/medidas</label><input id="detail" class="field" maxlength="160" placeholder="Ex.: 5 mm · 70 cm"></div><div class="formgroup"><label class="label" for="price">Preço (R$)</label><input id="price" class="field" type="number" min="0" step="0.01" placeholder="Deixe vazio para consultar"></div></div>
+      <div class="grid2"><div class="formgroup"><label class="label" for="pricePrefix">Texto antes do preço</label><input id="pricePrefix" class="field" maxlength="40" placeholder="Ex.: A partir de"></div><div class="formgroup"><label class="label" for="options">Opções e valores</label><input id="options" class="field" maxlength="500" placeholder="Ex.: 3 mm — R$ 25 · 5 mm — R$ 30"></div></div>
+      <div class="formgroup"><label class="check"><input id="featured" type="checkbox"> Exibir entre as joias em destaque</label></div>
+      <div class="images"><label class="imagebox"><span class="label">Foto principal</span><img id="mainPreview" alt="Prévia da foto principal"><input id="mainImage" type="file" accept="image/jpeg,image/png,image/webp"><small>A imagem será recortada no formato quadrado e otimizada antes do envio.</small></label><label class="imagebox"><span class="label">Foto de detalhe (opcional)</span><img id="detailPreview" alt="Prévia da foto de detalhe"><input id="detailImage" type="file" accept="image/jpeg,image/png,image/webp"><small>Use uma segunda foto apenas quando ela mostrar outro ângulo ou detalhe importante.</small></label></div>
+    </div>
+    <div class="modalfoot"><button id="deleteProduct" type="button" class="btn danger hidden">Excluir</button><div style="margin-left:auto;display:flex;gap:10px"><button type="button" class="btn secondary" data-close>Cancelar</button><button id="saveProduct" type="submit" class="btn">Salvar e publicar</button></div></div>
+  </form>
+</dialog>
+
+<div id="status" class="status hidden"></div>
+<script src="./catalogo.js"></script>
+<script>
+const state={products:structuredClone(window.FPC_CATALOG||[]),password:'',editing:null,files:{main:null,detail:null}};
+const $=id=>document.getElementById(id);
+const labels={masculino:'Masculino',feminino:'Feminino',personalizados:'Personalizados',infantil:'Infantil',acessorios:'Acessórios'};
+const typeLabels={correntes:'Correntes',conjuntos:'Conjuntos',aneis:'Anéis',pingentes:'Pingentes',pulseiras:'Pulseiras',colares:'Colares',brincos:'Brincos',piercings:'Piercings',acessorios:'Acessórios'};
+
+function escapeHtml(value){return String(value??'').replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));}
+function money(value,prefix=''){if(value===null||value==='')return 'Consultar';return `${prefix?prefix+' ':''}${Number(value).toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}`;}
+function slug(value){return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,80);}
+function notify(message,type=''){const el=$('status');el.textContent=message;el.className=`status ${type}`;clearTimeout(notify.timer);notify.timer=setTimeout(()=>el.classList.add('hidden'),6000);}
+function setBusy(button,busy,label){if(!button.dataset.label)button.dataset.label=button.textContent;button.disabled=busy;button.textContent=busy?label:button.dataset.label;}
+
+async function api(method='GET',body){const response=await fetch('/api/admin',{method,headers:{'content-type':'application/json','x-admin-password':state.password},body:body?JSON.stringify(body):undefined});const data=await response.json().catch(()=>({error:'Resposta inválida do servidor.'}));if(!response.ok)throw new Error(data.error||'Falha na comunicação com o painel.');return data;}
+
+function updateStats(){
+  $('statProducts').textContent=state.products.length;
+  $('statFeatured').textContent=state.products.filter(p=>p.featured).length;
+  $('statCategories').textContent=new Set(state.products.map(p=>p.audience)).size;
+  $('statNoPrice').textContent=state.products.filter(p=>p.price===null).length;
+}
+
+function renderProducts(){
+  const query=$('search').value.trim().toLocaleLowerCase('pt-BR');
+  const products=state.products.filter(p=>!query||`${p.name} ${p.id} ${p.detail}`.toLocaleLowerCase('pt-BR').includes(query));
+  $('productRows').innerHTML=products.map(p=>`<tr><td><img class="pthumb" src="${escapeHtml(p.image||'assets/logo-fpc.png')}" alt=""></td><td><div class="pname">${escapeHtml(p.name)}</div><div class="pid">${escapeHtml(p.id)}</div></td><td><span class="pill">${escapeHtml(labels[p.audience]||p.audience)}</span></td><td>${escapeHtml(typeLabels[p.type]||p.type)}</td><td>${escapeHtml(money(p.price,p.pricePrefix))}</td><td>${p.featured?'Sim':'—'}</td><td><div class="actions"><button class="iconbtn" data-edit="${escapeHtml(p.id)}">Editar</button><button class="iconbtn del" data-delete="${escapeHtml(p.id)}">Excluir</button></div></td></tr>`).join('');
+  $('empty').classList.toggle('hidden',products.length>0);
+  document.querySelectorAll('[data-edit]').forEach(btn=>btn.onclick=()=>openProduct(btn.dataset.edit));
+  document.querySelectorAll('[data-delete]').forEach(btn=>btn.onclick=()=>removeProduct(btn.dataset.delete));
+}
+
+function showView(view){
+  document.querySelectorAll('.view').forEach(el=>el.classList.toggle('hidden',el.id!==view));
+  document.querySelectorAll('.navbtn').forEach(el=>el.classList.toggle('on',el.dataset.view===view));
+  const copy={dashboard:['Visão geral','Painel administrativo'],products:['Produtos','Gerenciar catálogo'],settings:['Configuração','Integração do painel']}[view];
+  $('crumb').textContent=copy[0];$('title').textContent=copy[1];
+  if(view==='products')renderProducts();
+}
+
+function preview(img,path){img.src=path||'assets/logo-fpc.png';}
+function openProduct(id=null){
+  const product=id?state.products.find(p=>p.id===id):{id:'',name:'',audience:'masculino',type:'correntes',detail:'',price:null,pricePrefix:'',options:'',featured:false,image:'',detailImage:''};
+  state.editing=id;state.files={main:null,detail:null};
+  $('modalTitle').textContent=id?'Editar produto':'Adicionar produto';$('name').value=product.name||'';$('productId').value=product.id||'';$('productId').readOnly=!!id;$('audience').value=product.audience||'masculino';$('type').value=product.type||'correntes';$('detail').value=product.detail||'';$('price').value=product.price??'';$('pricePrefix').value=product.pricePrefix||'';$('options').value=product.options||'';$('featured').checked=!!product.featured;$('mainImage').value='';$('detailImage').value='';preview($('mainPreview'),product.image);preview($('detailPreview'),product.detailImage);$('deleteProduct').classList.toggle('hidden',!id);$('productDialog').showModal();
+}
+
+async function imageToJpeg(file){
+  const bitmap=await createImageBitmap(file);const size=Math.min(bitmap.width,bitmap.height);const sx=(bitmap.width-size)/2,sy=(bitmap.height-size)/2;const side=Math.min(1400,size);const canvas=document.createElement('canvas');canvas.width=canvas.height=side;const ctx=canvas.getContext('2d');ctx.fillStyle='#ece9e1';ctx.fillRect(0,0,side,side);ctx.drawImage(bitmap,sx,sy,size,size,0,0,side,side);bitmap.close();
+  let blob=null;for(const quality of [.86,.76,.66,.58]){blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/jpeg',quality));if(blob&&blob.size<=1200000)break;}
+  if(!blob||blob.size>1200000)throw new Error('Não foi possível otimizar a foto para o envio. Escolha uma imagem menor.');
+  return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result).split(',')[1]);reader.onerror=reject;reader.readAsDataURL(blob);});
+}
+
+async function publish(products,images,message){
+  return api('PUT',{products,images,message});
+}
+
+async function saveProduct(event){
+  event.preventDefault();const button=$('saveProduct');setBusy(button,true,'Publicando…');
+  try{
+    const id=$('productId').value.trim();if(!/^[a-z0-9-]{2,80}$/.test(id))throw new Error('Use apenas letras minúsculas, números e hífens no identificador.');
+    if(!state.editing&&state.products.some(p=>p.id===id))throw new Error('Já existe um produto com esse identificador.');
+    const old=state.editing?state.products.find(p=>p.id===state.editing):{};
+    const product={...old,id,name:$('name').value.trim(),audience:$('audience').value,type:$('type').value,detail:$('detail').value.trim(),price:$('price').value===''?null:Number($('price').value),featured:$('featured').checked};
+    const prefix=$('pricePrefix').value.trim(),options=$('options').value.trim();if(prefix)product.pricePrefix=prefix;else delete product.pricePrefix;if(options)product.options=options;else delete product.options;
+    const images=[],revision=Date.now(),previousMain=product.image;
+    if(state.files.main){product.image=`assets/catalogo/${id}-${revision}-principal.jpg`;images.push({path:product.image,content:await imageToJpeg(state.files.main)});}
+    if(state.files.detail){product.detailImage=`assets/catalogo/${id}-${revision}-detalhe.jpg`;images.push({path:product.detailImage,content:await imageToJpeg(state.files.detail)});}
+    else if(state.files.main&&!product.detailImage&&previousMain){product.detailImage=previousMain;}
+    if(!product.image)throw new Error('Selecione uma foto principal.');
+    const next=state.editing?state.products.map(p=>p.id===state.editing?product:p):[...state.products,product];
+    await publish(next,images,`${state.editing?'Atualiza':'Adiciona'} produto ${product.name}`);state.products=next;$('productDialog').close();updateStats();renderProducts();notify('Produto salvo. A Vercel já está publicando a atualização.','ok');
+  }catch(error){notify(error.message,'bad');}finally{setBusy(button,false);}
+}
+
+async function removeProduct(id){
+  const product=state.products.find(p=>p.id===id);if(!product||!confirm(`Excluir “${product.name}” do catálogo?`))return;
+  try{const next=state.products.filter(p=>p.id!==id);notify('Excluindo e publicando…');await publish(next,[],`Remove produto ${product.name}`);state.products=next;updateStats();renderProducts();if($('productDialog').open)$('productDialog').close();notify('Produto excluído. A atualização está sendo publicada.','ok');}catch(error){notify(error.message,'bad');}
+}
+
+$('loginForm').onsubmit=async event=>{event.preventDefault();const button=$('loginButton');setBusy(button,true,'Verificando…');$('loginError').classList.add('hidden');try{state.password=$('password').value;await api();sessionStorage.setItem('fpc_admin_password',state.password);$('login').classList.add('hidden');updateStats();renderProducts();}catch(error){state.password='';$('loginError').textContent=error.message;$('loginError').classList.remove('hidden');}finally{setBusy(button,false);}};
+$('logout').onclick=()=>{sessionStorage.removeItem('fpc_admin_password');location.reload();};
+document.querySelectorAll('.navbtn').forEach(btn=>btn.onclick=()=>showView(btn.dataset.view));document.querySelectorAll('[data-go-products]').forEach(btn=>btn.onclick=()=>showView('products'));document.querySelectorAll('[data-close]').forEach(btn=>btn.onclick=()=>$('productDialog').close());$('search').oninput=renderProducts;$('addProduct').onclick=()=>openProduct();$('productForm').onsubmit=saveProduct;$('deleteProduct').onclick=()=>removeProduct(state.editing);$('name').oninput=()=>{if(!state.editing)$('productId').value=slug($('name').value);};$('mainImage').onchange=event=>{state.files.main=event.target.files[0]||null;if(state.files.main)preview($('mainPreview'),URL.createObjectURL(state.files.main));};$('detailImage').onchange=event=>{state.files.detail=event.target.files[0]||null;if(state.files.detail)preview($('detailPreview'),URL.createObjectURL(state.files.detail));};
+$('export').onclick=()=>{const blob=new Blob([JSON.stringify(state.products,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='fpc-catalogo.json';a.click();URL.revokeObjectURL(a.href);};
+
+const saved=sessionStorage.getItem('fpc_admin_password');if(saved){state.password=saved;api().then(()=>{$('login').classList.add('hidden');updateStats();renderProducts();}).catch(()=>sessionStorage.removeItem('fpc_admin_password'));}
+</script>
+</body>
+</html>

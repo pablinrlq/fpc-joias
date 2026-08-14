@@ -367,7 +367,7 @@ html{-webkit-tap-highlight-color:transparent}
 <div class="shoplay">
 <aside class="fside">
 <div class="fgrp"><div class="flab">Buscar</div><div class="srchbox"><svg class="sic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg><input class="in" placeholder="Buscar peça…" value="{{ q }}" onChange="{{ onQ }}"><sc-if value="{{ hasQ }}" hint-placeholder-val="{{ false }}"><button class="sclr" onClick="{{ clearQ }}" aria-label="Limpar busca">×</button></sc-if></div></div>
-<div class="fgrp"><div class="flab">Categoria</div><div class="chips"><sc-for list="{{ audienceFilters }}" as="f" hint-placeholder-count="5"><button class="{{ f.cls }}" onClick="{{ f.set }}">{{ f.label }}</button></sc-for></div></div>
+<div class="fgrp"><div class="flab">Categoria</div><div class="chips"><sc-for list="{{ audienceFilters }}" as="f" hint-placeholder-count="6"><button class="{{ f.cls }}" onClick="{{ f.set }}">{{ f.label }}</button></sc-for></div></div>
 <div class="fgrp"><div class="flab">Tipo de peça</div><div class="chips"><sc-for list="{{ typeFilters }}" as="f" hint-placeholder-count="6"><button class="{{ f.cls }}" onClick="{{ f.set }}">{{ f.label }}</button></sc-for></div></div>
 <div class="cbox" style="margin:0;padding:18px 20px"><div class="fs13" style="line-height:1.6"><span class="fw6">Garantia vitalícia</span><br><span class="mut2">Autenticidade da cor das peças em prata 925.</span></div></div>
 </aside>
@@ -456,7 +456,7 @@ class Component extends DCLogic {
     sent:false, ctNome:'', ctTel:'', ctMsg:''
   };
   P = Array.isArray(window.FPC_CATALOG) ? window.FPC_CATALOG : [];
-  AUDIENCES = {masculino:'Masculino', feminino:'Feminino', personalizados:'Personalizados', acessorios:'Acessórios'};
+  AUDIENCES = {masculino:'Masculino', feminino:'Feminino', infantil:'Infantil', personalizados:'Personalizados', acessorios:'Acessórios'};
   TYPES = {correntes:'Correntes', conjuntos:'Conjuntos', aneis:'Anéis', pingentes:'Pingentes', pulseiras:'Pulseiras', colares:'Colares', brincos:'Brincos', piercings:'Piercings', acessorios:'Acessórios'};
   WA = 'https://wa.me/5531984937038';
   nrm(t){ return String(t||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
@@ -518,7 +518,7 @@ class Component extends DCLogic {
       waSolda:this.wa('Olá! Preciso de um orçamento de manutenção em uma peça de prata 925.'),
       waProduct:this.wa(productMessage),
       featured:featured.map(p=>this.enrich(p)),
-      audienceFilters:mkFilters('audience',[['todos','Todas'],['masculino','Masculino'],['feminino','Feminino'],['personalizados','Personalizados'],['acessorios','Acessórios']]),
+      audienceFilters:mkFilters('audience',[['todos','Todas'],['masculino','Masculino'],['feminino','Feminino'],['infantil','Infantil'],['personalizados','Personalizados'],['acessorios','Acessórios']]),
       typeFilters:mkFilters('type',[['todos','Todos'],['correntes','Correntes'],['conjuntos','Conjuntos'],['aneis','Anéis'],['pingentes','Pingentes'],['pulseiras','Pulseiras'],['colares','Colares'],['brincos','Brincos'],['piercings','Piercings'],['acessorios','Acessórios']]),
       shopList:list.map(p=>this.enrich(p)),shopCount:list.length,shopEmpty:list.length===0,
       clearFilters:()=>this.setState({audience:'todos',type:'todos',q:''}),
